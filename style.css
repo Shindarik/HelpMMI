@@ -58,7 +58,7 @@ header{
 header .slogan{
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 30%;
     transform: translateX(-50%);
     font-size: 3rem;
     text-align: center;
