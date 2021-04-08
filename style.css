@@ -19,7 +19,8 @@ nav{
     top: 0;
     width: 100%;
     height: 100px;
-    background-color: #58A4B0;
+    background-color: #58a4b0d0;
+    backdrop-filter: blur(3px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -137,13 +138,18 @@ header .wave2{
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
+    transition: all .5s ease;
+}
+
+#choixDomaine .card:hover{
+    box-shadow: 8px 10px #58A4B0;
+    transform: translate(-8px, -10px);
 }
 
 #choixDomaine .card h3{
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
     margin: 0;
     padding: 1.5rem;
     font-size: 1.25rem;
@@ -236,11 +242,6 @@ header .wave2{
     margin: 1rem 0rem;
 }
 
-#choixStage .stages{
-    height: 100%;
-    width: 75%;
-    border: solid red;
-}
 
 #choixStage .boutons{
     display: flex;
@@ -264,12 +265,12 @@ header .wave2{
 
 #choixStage .boutons .btnMap button{
     position: relative;
-    width: 100%;
+    width:80%;
     height: 30px;
     border: none;
     border-radius: 30px;
     margin: 10px 0px;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.568);
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -294,25 +295,25 @@ header .wave2{
     font-weight: bold;
     opacity: 0;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 10%;
+    transform: translateY(-50%);
     width: 50%;
     height: 50%;
-    transition: all 1s ease;
 }
 
 #choixStage .boutons .btnMap button:hover::after{
-   opacity: 1;
+    opacity: 1;
+    transition: all 1s ease;
 }
 
 #choixStage .boutons .btnMap button:hover::before{
-   left: 96%;
-   transform: translate(-100%, -50%);
-   background-color: #fff;
+    left: 96%;
+    transform: translate(-100%, -50%);
+    background-color: #fff;
 }
 
 #choixStage .boutons .btnMap button:hover{
-   background-color: #EF8275;
+    background-color: #EF8275;
 }
 
 #choixStage .boutons .btnMap button:focus{
@@ -332,6 +333,68 @@ header .wave2{
 
 #choixStage .boutons a:hover{
     box-shadow: none;
+    transform: translate(5px, 3px);
+}
+
+#choixStage .stages{
+    height: 100%;
+    width: 75%;
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+}
+
+#choixStage .stage{
+    position: relative;
+    height: 35%;
+    width: 95%;
+    background-color: #fff;
+    box-shadow: 15px 20px hsla(0, 0%, 0%, 0.2);
+    margin-bottom: 50px;
+}
+
+#choixStage .stage h3{
+    text-align: center;
+    color: black;
+}
+
+#choixStage .logoEntreprise{
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    border-radius: 30px;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+
+#choixStage .descriptionMission{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: 300;
+    width: 50%;
+    text-align: justify;
+}
+
+#choixStage .btnDefil{
+    position: absolute;
+    top: 7%;
+    right: 3%;
+}
+
+#choixStage .stars{
+    position: absolute;
+    bottom: 7%;
+    right: 3%;
 }
 
 footer{
