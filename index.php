@@ -11,24 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <title>HelpMMI</title>
 </head>
-<?php
-    $link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=fsaal_db', 'root', '', array
-    (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-
-    if(isset($_GET["ad_courriel"])){
-        $sql = "INSERT INTO users(courriel) VALUES (:courriel)";
-        // On prépare la requête avant l'envoi :
-        $req = $link -> prepare($sql);
-        // On exécute la requête en insérant la valeur transmise en GET
-        $req -> execute(array(":courriel" => $_GET["ad_courriel"]));
-        $req = null;
-        // On affiche l'adresse inscrite en évitant une injection de code JS
-        echo "L'adresse ".htmlentities($_GET["ad_courriel"])." est inscrite !";
-       }
-    
->
 
 <body>
+    <?php
+        $link = new PDO('mysql:host=localhost;dbname=information_schema', 'root', '', array
+        (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+        //sqletud.u-pem.fr
+    ?>
+    
+
     <nav>
         <div class="logoIndex">
             <a href="./index.html">
@@ -185,7 +176,20 @@
 
                 <img src="https://www.keolis.com/sites/default/files/thumbnails/image/appli_ametis.jpg" alt="logo entreprise" class="logoEntreprise">
 
-                <p class="descriptionMission">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aplaceat fuga, asperiores dolor quod laborum molestias. Quae debitis asperiores eaque doloribus,magnam, ipsam deserunt laudantium provident tenetur quo quis dolores fuga tempora...</p>
+                <p class="descriptionMission">
+                    <?php
+                        $sql = "SELECT DESCRIPTION, CHARACTER_SET_NAME 
+                        FROM CHARACTER_SETS
+                        WHERE CHARACTER_SET_NAME = '%big5' ";
+                        // On prépare la requête avant l'envoi :
+                        $req = $link -> prepare($sql);
+                        $req -> execute();
+                        while($data = $req -> fetch()){
+                            echo '<span>'.$data['DESCRIPTION'].'</span>';
+                            $req = null; 
+                        } 
+                    ?>
+                </p>
 
                 <svg class="btnDefil" width="50" height="102" viewBox="0 0 97 102" fill="none" xmlns="http:/wwww3.org/2000/svg">
                            <ellipse rx="48.3571" ry="49.101" transform="matrix(-1 0 0 1 48.5455 52.0769)" fill="#EF8275"/>
