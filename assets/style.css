@@ -1,0 +1,442 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #58A4B0;
+    color: white;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #58a4b0d0;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    z-index: 10;
+}
+
+.links{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.links li{
+    font-size: 1rem;
+    list-style: none;
+    margin: 2rem;
+}
+
+.links a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.links a::before{
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.25s ease-out;
+}
+
+.links a:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+
+
+header{
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+    background-color: #58A4B0;
+    overflow: hidden;
+}
+
+header .slogan{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    text-align: center;
+    z-index: 2;
+}
+
+header .discover{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+header .perso1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+header .perso2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+header .wave1{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    transform: scale(1.5);
+}
+
+header .wave2{
+    position: absolute;
+    z-index: 0;
+    bottom: 20px;
+    left: 0;
+    transform: scale(1.5);
+}
+
+#choixDomaine{
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background: #1B3F45;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#choixDomaine h2{
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+#choixDomaine .cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#choixDomaine .card{
+    position: relative;
+    width: 20%;
+    height: 80%;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#choixDomaine .card:hover{
+    box-shadow: 8px 10px #58A4B0;
+    transform: translate(-8px, -10px);
+}
+
+#choixDomaine .card h3{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: 0;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ef8175ab;
+    backdrop-filter: blur(5px);
+    width: 100%;
+}
+
+#choixDomaine .audiovisuel{
+    background-image: url(./images/audiovisuel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#choixDomaine .graphisme{
+    background-image: url(./images/graphisme.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#choixDomaine .developpement{
+    background-image: url(./images/developpement.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#choixDomaine .communication{
+    background-image: url(./images/communication.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#choixStage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #58A4B0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#choixStage aside{
+    height: 100%;
+    width: 25%;
+    padding: 2rem;
+}
+
+#choixStage .filtres{
+    height: auto;
+    width: 100%;
+    background-color: #1B3F45;
+    border-radius: 20px 0px;
+}
+
+#choixStage .filtres fieldset{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+    border: none;
+}
+
+#choixStage .filtres fieldset legend{
+    text-align: center;
+    font-size: 1.25rem;
+    padding-top: 2rem;
+}
+
+#choixStage .filtres fieldset label{
+    font-size: 1rem;
+}
+
+#choixStage .filtres fieldset input{
+    transform: scale(2);
+}
+
+#choixStage .filtre{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+
+#choixStage .boutons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#choixStage .boutons .btnMap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+#choixStage .boutons .btnMap label{
+    font-size: 1.25rem;
+}
+
+#choixStage .boutons .btnMap button{
+    position: relative;
+    width:80%;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    margin: 10px 0px;
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#choixStage .boutons .btnMap button::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #1B3F45;
+    transition: all 0.5s ease;
+}
+
+#choixStage .boutons .btnMap button::after{
+    position: absolute;
+    content: 'MAP';
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 50%;
+}
+
+#choixStage .boutons .btnMap button:hover::after{
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+#choixStage .boutons .btnMap button:hover::before{
+    left: 96%;
+    transform: translate(-100%, -50%);
+    background-color: #fff;
+}
+
+#choixStage .boutons .btnMap button:hover{
+    background-color: #EF8275;
+}
+
+#choixStage .boutons .btnMap button:focus{
+    outline: none;
+}
+
+#choixStage .boutons a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    background-color: #EF8275;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 3px 5px #94443b;
+    transition: all .5s ease;
+}
+
+#choixStage .boutons a:hover{
+    box-shadow: none;
+    transform: translate(5px, 3px);
+}
+
+#choixStage .stages{
+    height: auto;
+    max-height: 90%;
+    min-height: 50%;
+    width: 65%;
+    padding: 0 2rem;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: solid black;
+    overflow-y: auto;
+}
+
+#choixStage .stage{
+    position: relative;
+    height: 175px;
+    min-height: 175px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 15px 20px hsla(0, 0%, 0%, 0.2);
+    margin-top: 50px;
+}
+
+#choixStage .stage h3{
+    text-align: center;
+    color: black;
+}
+
+#choixStage .logoEntreprise{
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    border-radius: 30px;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+
+#choixStage .descriptionMission{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: 300;
+    width: 50%;
+    text-align: justify;
+}
+
+#choixStage .btnDefil{
+    position: absolute;
+    top: 7%;
+    right: 3%;
+}
+
+#choixStage .stars{
+    position: absolute;
+    bottom: 7%;
+    right: 3%;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #111;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+footer p{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: .6rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
