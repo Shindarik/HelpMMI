@@ -2,13 +2,13 @@
 <html lang="fr">
 
 <?php
-    include __DIR__ . '/../assets/head.html';
+    include __DIR__ . '/assets/head.html';
 ?>
 
 <body>
 
     <?php
-        $link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=fsaal_db', 'fsaal', 'passemot', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+        $link = new PDO('mysql:host=localhost;dbname=fsaal_db', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
     ?>
     
 
@@ -164,7 +164,22 @@
         <div class="stages">
             
             <div class="stage">
-                <h3 class="titre"><span class="poste">Chargé de Communication</span> - MMI<span class="anneeMMI">2</span> - <span class="annee">2017</span></h3>
+                <h3 class="titre">
+                    <span class="poste">
+                        <?php
+                            $sql = "SELECT poste, Id_stage 
+                            FROM Stage
+                            WHERE Id_stage = '2' ";
+                            $req = $link -> prepare($sql);
+                            $req -> execute();
+                            while($data = $req -> fetch()){
+                                echo '<span>'.$data['poste'].'</span>';
+                            };
+                        ?>
+                    </span> - MMI
+                    <span class="anneeMMI">2</span> - 
+                    <span class="annee">2017</span>
+                </h3>
 
                 <img src="https://www.keolis.com/sites/default/files/thumbnails/image/appli_ametis.jpg" alt="logo entreprise" class="logoEntreprise">
 
@@ -172,14 +187,12 @@
                     <?php
                         $sql = "SELECT description, Id_stage 
                         FROM Stage
-                        WHERE Id_stage = '1' ";
-                        // On prépare la requête avant l'envoi :
+                        WHERE Id_stage = '2' ";
                         $req = $link -> prepare($sql);
                         $req -> execute();
                         while($data = $req -> fetch()){
-                            echo '<span>'.$data['DESCRIPTION'].'</span>';
-                            $req = null; 
-                        } 
+                            echo '<span>'.$data['description'].'</span>';
+                        };
                     ?>
                 </p>
 

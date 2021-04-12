@@ -180,27 +180,27 @@ header .wave2{
 }
 
 #choixDomaine .audiovisuel{
-    background-image: url(./images/audiovisuel.jpg);
+    background-image: url(../images/audiovisuel.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #choixDomaine .graphisme{
-    background-image: url(./images/graphisme.jpg);
+    background-image: url(../images/graphisme.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #choixDomaine .developpement{
-    background-image: url(./images/developpement.jpg);
+    background-image: url(../images/developpement.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #choixDomaine .communication{
-    background-image: url(./images/communication.jpg);
+    background-image: url(../images/communication.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
