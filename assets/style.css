@@ -420,6 +420,13 @@ header .wave2{
     right: 3%;
 }
 
+.stage .note{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    user-select: none;
+}
+
 footer{
     position: relative;
     width: 100%;
