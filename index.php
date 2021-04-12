@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <?php
-    include "./assets/head.html";
+    include __DIR__ . '/../assets/head.html';
 ?>
 
 <body>
