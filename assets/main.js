@@ -1,4 +1,4 @@
-const btnDefil = document.querySelector(".stage .btnDefil");
+const btnDefil = document.querySelector(".btnDefil");
 const stage = document.querySelector(".stage");
 const descriptionStage = document.querySelector(".stage .descriptionMission");
 const avisPositif = document.querySelector(".stage .avisPositif");
@@ -15,9 +15,11 @@ var defil = false;
 
 
 window.addEventListener("load", function(){
+    
     for (var i = 0; i < note; i++){
-        document.querySelector(".star"+(i+1)).style.fill = "#EF8275";
+        document.querySelector(".star"+(i+1)).style.fill = "#EF8275";   
     };
+
 
     if(sexe == 0){
         icone.innerHTML = '<svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">'
@@ -39,51 +41,109 @@ window.addEventListener("load", function(){
 
 });
 
-btnDefil.addEventListener("click", function(){
-    if(defil == false){       
-        btnDefil.style.transform = "rotateZ(180deg)";
-        stage.style.height = "475px";
-        avisPositif.style.visibility = "visible";
-        avisPositif.style.opacity = "1";
-        avisNegatif.style.visibility = "visible";
-        avisNegatif.style.opacity = "1";
-        entreprise.style.visibility = "visible";
-        entreprise.style.opacity = "1";
-        like.style.visibility = "visible";
-        like.style.opacity = "1";
-        dislike.style.visibility = "visible";
-        dislike.style.opacity = "1";
-        icone.style.visibility = "visible";
-        icone.style.opacity = "1";
-        titreStage.style.top = "20px";
-        titreStage.style.left = "35%";
-        descriptionStage.style.top = "45%";
-        descriptionStage.style.left = "33%";
-        descriptionStage.style.width = "35%";
-        defil = true;
-    }else{
-        btnDefil.style.transform = "rotateZ(0deg)";
-        stage.style.height = "175px";
-        avisPositif.style.visibility = "hidden";
-        avisPositif.style.opacity = "0";
-        avisNegatif.style.visibility = "hidden";
-        avisNegatif.style.opacity = "0";
-        entreprise.style.visibility = "hidden";
-        entreprise.style.opacity = "0";
-        like.style.visibility = "hidden";
-        like.style.opacity = "0";
-        dislike.style.visibility = "hidden";
-        dislike.style.opacity = "0";
-        icone.style.visibility = "hidden";
-        icone.style.opacity = "0";
-        titreStage.style.top = "20px";
-        titreStage.style.top = "5px";
-        titreStage.style.left = "50%";
-        descriptionStage.style.top = "50%";
-        descriptionStage.style.left = "50%";
-        descriptionStage.style.width = "50%";
 
-        defil = false;
-    }
+// stage.forEach((element) => {
+
+    
+    
+
+//     btnDefil.addEventListener("click", function(){
+//         if(defil == false){       
+//             btnDefil.style.transform = "rotateZ(180deg)";
+//             stage.style.height = "475px";
+//             avisPositif.style.visibility = "visible";
+//             avisPositif.style.opacity = "1";
+//             avisNegatif.style.visibility = "visible";
+//             avisNegatif.style.opacity = "1";
+//             entreprise.style.visibility = "visible";
+//             entreprise.style.opacity = "1";
+//             like.style.visibility = "visible";
+//             like.style.opacity = "1";
+//             dislike.style.visibility = "visible";
+//             dislike.style.opacity = "1";
+//             icone.style.visibility = "visible";
+//             icone.style.opacity = "1";
+//             titreStage.style.top = "20px";
+//             titreStage.style.left = "185px";
+//             titreStage.style.transform = "translate(0%)";
+//             descriptionStage.style.top = "45%";
+//             descriptionStage.style.left = "33%";
+//             descriptionStage.style.width = "35%";
+//             defil = true;
+//         }else{
+//             element.style.transform = "rotateZ(0deg)";
+//             stage.style.height = "175px";
+//             avisPositif.style.visibility = "hidden";
+//             avisPositif.style.opacity = "0";
+//             avisNegatif.style.visibility = "hidden";
+//             avisNegatif.style.opacity = "0";
+//             entreprise.style.visibility = "hidden";
+//             entreprise.style.opacity = "0";
+//             like.style.visibility = "hidden";
+//             like.style.opacity = "0";
+//             dislike.style.visibility = "hidden";
+//             dislike.style.opacity = "0";
+//             icone.style.visibility = "hidden";
+//             icone.style.opacity = "0";
+//             titreStage.style.top = "20px";
+//             titreStage.style.top = "5px";
+//             titreStage.style.left = "50%";
+//             titreStage.style.transform = "translate(-50%)";
+//             descriptionStage.style.top = "50%";
+//             descriptionStage.style.left = "50%";
+//             descriptionStage.style.width = "50%";
+    
+//             defil = false;
+//         }
+//     });
+// });
+
+btnDefil.addEventListener("click", function(){
+     if(defil == false){       
+         btnDefil.style.transform = "rotateZ(180deg)";
+         stage.style.height = "475px";
+         avisPositif.style.visibility = "visible";
+         avisPositif.style.opacity = "1";
+         avisNegatif.style.visibility = "visible";
+         avisNegatif.style.opacity = "1";
+         entreprise.style.visibility = "visible";
+         entreprise.style.opacity = "1";
+         like.style.visibility = "visible";
+         like.style.opacity = "1";
+         dislike.style.visibility = "visible";
+         dislike.style.opacity = "1";
+         icone.style.visibility = "visible";
+         icone.style.opacity = "1";
+         titreStage.style.top = "20px";
+         titreStage.style.left = "185px";
+         titreStage.style.transform = "translate(0%)";
+         descriptionStage.style.top = "45%";
+         descriptionStage.style.left = "33%";
+         descriptionStage.style.width = "35%";
+         defil = true;
+     }else{
+         btnDefil.style.transform = "rotateZ(0deg)";
+         stage.style.height = "175px";
+         avisPositif.style.visibility = "hidden";
+         avisPositif.style.opacity = "0";
+         avisNegatif.style.visibility = "hidden";
+         avisNegatif.style.opacity = "0";
+         entreprise.style.visibility = "hidden";
+         entreprise.style.opacity = "0";
+         like.style.visibility = "hidden";
+         like.style.opacity = "0";
+         dislike.style.visibility = "hidden";
+         dislike.style.opacity = "0";
+         icone.style.visibility = "hidden";
+         icone.style.opacity = "0";
+         titreStage.style.top = "20px";
+         titreStage.style.top = "5px";
+         titreStage.style.left = "50%";
+         titreStage.style.transform = "translate(-50%)";
+         descriptionStage.style.top = "50%";
+         descriptionStage.style.left = "50%";
+         descriptionStage.style.width = "50%"
+         defil = false;
+     }
 });
 

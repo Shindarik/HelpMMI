@@ -163,7 +163,7 @@
         </aside>
 
         <div class="stages">
-            
+
             <div class="stage">
                 <h3 class="titre">
                     <span class="poste">
@@ -230,7 +230,18 @@
                         ?>
                     </span>
                     <div class="icone"></div>
-                    <p class="nomEtudiant"></p>
+                    <p class="nomEtudiant">
+                        <?php
+                            $sql = "SELECT prenom, nom, Id_etudiant 
+                            FROM Etudiants
+                            WHERE Id_etudiant = '2' ";
+                            $req = $link -> prepare($sql);
+                            $req -> execute();
+                            while($data = $req -> fetch()){
+                                echo ''.$data['prenom'].' '.$data['nom'].'';
+                            };
+                        ?>
+                    </p>
                 </div>
 
                 <p class="descriptionMission">
