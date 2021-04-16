@@ -41,62 +41,7 @@ window.addEventListener("load", function(){
 
 });
 
-
-// stage.forEach((element) => {
-
-    
-    
-
-//     btnDefil.addEventListener("click", function(){
-//         if(defil == false){       
-//             btnDefil.style.transform = "rotateZ(180deg)";
-//             stage.style.height = "475px";
-//             avisPositif.style.visibility = "visible";
-//             avisPositif.style.opacity = "1";
-//             avisNegatif.style.visibility = "visible";
-//             avisNegatif.style.opacity = "1";
-//             entreprise.style.visibility = "visible";
-//             entreprise.style.opacity = "1";
-//             like.style.visibility = "visible";
-//             like.style.opacity = "1";
-//             dislike.style.visibility = "visible";
-//             dislike.style.opacity = "1";
-//             icone.style.visibility = "visible";
-//             icone.style.opacity = "1";
-//             titreStage.style.top = "20px";
-//             titreStage.style.left = "185px";
-//             titreStage.style.transform = "translate(0%)";
-//             descriptionStage.style.top = "45%";
-//             descriptionStage.style.left = "33%";
-//             descriptionStage.style.width = "35%";
-//             defil = true;
-//         }else{
-//             element.style.transform = "rotateZ(0deg)";
-//             stage.style.height = "175px";
-//             avisPositif.style.visibility = "hidden";
-//             avisPositif.style.opacity = "0";
-//             avisNegatif.style.visibility = "hidden";
-//             avisNegatif.style.opacity = "0";
-//             entreprise.style.visibility = "hidden";
-//             entreprise.style.opacity = "0";
-//             like.style.visibility = "hidden";
-//             like.style.opacity = "0";
-//             dislike.style.visibility = "hidden";
-//             dislike.style.opacity = "0";
-//             icone.style.visibility = "hidden";
-//             icone.style.opacity = "0";
-//             titreStage.style.top = "20px";
-//             titreStage.style.top = "5px";
-//             titreStage.style.left = "50%";
-//             titreStage.style.transform = "translate(-50%)";
-//             descriptionStage.style.top = "50%";
-//             descriptionStage.style.left = "50%";
-//             descriptionStage.style.width = "50%";
-    
-//             defil = false;
-//         }
-//     });
-// });
+// Il faut juste faire un toggle class ".active" || CODE A MODIFIER 
 
 btnDefil.addEventListener("click", function(){
      if(defil == false){       
