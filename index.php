@@ -340,6 +340,182 @@
                            <path class="star1" d="M18.7663 0L22.9796 14.5971H36.6141L25.5835 23.6187L29.7968 38.2158L18.7663 29.1943L7.73574 38.2158L11.949 23.6187L0.918488 14.5971H14.553L18.7663 0Z" fill="none" stroke="#EF8275" stroke-width="2"/>
                 </svg>
             </div>
+            <div class="stage">
+                <h3 class="titre">
+                    <span class="poste">
+                        <?php
+                            $sql = "SELECT poste, Id_stage 
+                            FROM Stage
+                            WHERE Id_stage = '5' ";
+                            $req = $link -> prepare($sql);
+                            $req -> execute();
+                            while($data = $req -> fetch()){
+                                echo $data['poste'];
+                            };
+                        ?>
+                    </span> - MMI
+                    <span class="anneeMMI">
+                        <?php
+                            $sql = "SELECT anneeMMI, Id_stage 
+                            FROM Stage
+                            WHERE Id_stage = '5' ";
+                            $req = $link -> prepare($sql);
+                            $req -> execute();
+                            while($data = $req -> fetch()){
+                                echo $data['anneeMMI'];
+                            };
+                        ?>
+                    </span> - 
+                    <span class="annee">
+                        <?php
+                            $sql = "SELECT annee_stage, Id_stage 
+                            FROM Stage
+                            WHERE Id_stage = '5' ";
+                            $req = $link -> prepare($sql);
+                            $req -> execute();
+                            while($data = $req -> fetch()){
+                                echo $data['annee_stage'];
+                            };
+                        ?>
+                    </span>
+                </h3>
+
+                <img src="
+                    <?php
+                        $sql = "SELECT logo, Id_entreprise 
+                        FROM entreprises
+                        WHERE Id_entreprise = '5' ";
+                        $req = $link -> prepare($sql);
+                        $req -> execute();
+                        while($data = $req -> fetch()){
+                            echo $data['logo'];
+                        };
+                    ?>" alt="logo entreprise" class="logoEntreprise">
+
+                <div class="etudiant">
+                    <span class="sexe">
+                        <?php
+                            $sql = "SELECT sexe, Id_etudiant 
+                            FROM Etudiants
+                            WHERE Id_etudiant = '5' ";
+                            $req = $link -> prepare($sql);
+                            $req -> execute();
+                            while($data = $req -> fetch()){
+                                echo $data['sexe'];
+                            };
+                        ?>
+                    </span>
+                    <div class="icone"></div>
+                    <p class="nomEtudiant">
+                        <?php
+                            $sql = "SELECT prenom, nom, Id_etudiant 
+                            FROM Etudiants
+                            WHERE Id_etudiant = '5' ";
+                            $req = $link -> prepare($sql);
+                            $req -> execute();
+                            while($data = $req -> fetch()){
+                                echo ''.$data['prenom'].' '.$data['nom'].'';
+                            };
+                        ?>
+                    </p>
+                </div>
+
+                <p class="descriptionMission">
+                    <?php
+                        $sql = "SELECT description, Id_stage 
+                        FROM Stage
+                        WHERE Id_stage = '5' ";
+                        $req = $link -> prepare($sql);
+                        $req -> execute();
+                        while($data = $req -> fetch()){
+                            echo $data['description'];
+                        };
+                    ?>
+                </p>
+
+                <p class="entreprise">
+                    Chez<a target="_blank" href="
+                        <?php
+                            $sql = "SELECT site_web, Id_entreprise
+                            FROM Entreprises
+                            WHERE Id_entreprise = '5' ";
+                            $req = $link -> prepare($sql);
+                            $req -> execute();
+                            while($data = $req -> fetch()){
+                                echo $data['site_web'];
+                            };
+                        ?>
+                    ">
+                        <?php
+                            $sql = "SELECT nom, Id_entreprise
+                            FROM Entreprises
+                            WHERE Id_entreprise = '5' ";
+                            $req = $link -> prepare($sql);
+                            $req -> execute();
+                            while($data = $req -> fetch()){
+                                echo $data['nom'];
+                            };
+                        ?>
+                    </a>
+                </p>
+
+                <svg class="like" width="50px" enable-background="new 0 0 32 32" id="Editable-line" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="  M26.002,13H20V7.026C20,5.907,19.093,5,17.974,5c-0.615,0-1.198,0.28-1.582,0.76L9,15l0.001,0L9,15v10l3,2h12.473  c0.892,0,1.676-0.592,1.921-1.451l2.49-8.725C29.43,14.908,27.993,13,26.002,13z" fill="none" id="XMLID_5_" stroke="#28A95C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><rect fill="none" height="14" id="XMLID_3_" stroke="#28A95C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" width="6" x="3" y="13"/><circle cx="6" cy="23" id="XMLID_4_" r="1" fill="#28A95C"/></svg>
+                
+                
+                <p class="avisPositif">
+                    <?php
+                        $sql = "SELECT positif, Id_stage 
+                        FROM Stage
+                        WHERE Id_stage = '5' ";
+                        $req = $link -> prepare($sql);
+                        $req -> execute();
+                        while($data = $req -> fetch()){
+                            echo $data['positif'];
+                        };
+                        ?>
+                </p>
+                
+                <svg class="dislike" width="50px" enable-background="new 0 0 32 32" id="Editable-line" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="  M5.998,19H12v5.974C12,26.093,12.907,27,14.026,27c0.615,0,1.198-0.28,1.582-0.76L23,17l-0.001,0L23,17V7l-3-2H7.527  C6.636,5,5.852,5.592,5.607,6.451l-2.49,8.725C2.57,17.092,4.007,19,5.998,19z" fill="none" id="XMLID_21_" stroke="#EA1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><rect fill="none" height="14" id="XMLID_20_" stroke="#EA1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" transform="matrix(-1 -8.988867e-11 8.988867e-11 -1 52 24)" width="6" x="23" y="5"/><circle cx="26" cy="9" id="XMLID_19_" r="1" fill="#EA1A1A"/></svg>
+
+                <p class="avisNegatif">
+                    <?php
+                        $sql = "SELECT negatif, Id_stage 
+                        FROM Stage
+                        WHERE Id_stage = '5' ";
+                        $req = $link -> prepare($sql);
+                        $req -> execute();
+                        while($data = $req -> fetch()){
+                            echo $data['negatif'];
+                        };
+                    ?>
+                </p>
+
+                <span class="note">
+                    <?php
+                        $sql = "SELECT note, Id_entreprise 
+                        FROM stage
+                        WHERE Id_stage = '5' ";
+                        $req = $link -> prepare($sql);
+                        $req -> execute();
+                        while($data = $req -> fetch()){
+                            echo $data['note'];
+                        };
+                    ?>
+                </span>
+
+                <svg class="btnDefil" width="50" height="102" viewBox="0 0 97 102" fill="none" xmlns="http:/wwww3.org/2000/svg">
+                           <ellipse rx="48.3571" ry="49.101" transform="matrix(-1 0 0 1 48.5455 52.0769)" fill="#EF8275"/>
+                           <path d="M27.0095 37.0862C26.7283 36.9368 26.5221 36.9334 26.3694 36.9627C26.1907 36.9971 25.9912 37.0985 25.821 37.2748C25.6507 37.4512 25.5565 37.6542 25.5284 37.834C25.5045 37.9876 25.5152 38.1936 25.6744 38.4693L47.4553 76.1949C47.8402 76.8616 48.8025 76.8616 49.1874 76.1949L70.9682 38.4694C71.1274 38.1936 71.1382 37.9876 71.1142 37.834C71.0862 37.6542 70.9919 37.4512 70.8217 37.2748C70.6515 37.0985 70.452 36.9971 70.2732 36.9627C70.1206 36.9334 69.9143 36.9368 69.6331 37.0862L51.605 46.6621C49.5517 47.7527 47.0909 47.7527 45.0377 46.6621L27.0095 37.0862Z" stroke="white" fill="white" stroke-width="6"/>
+                </svg>
+
+                <svg class="stars" width="120" height="43" viewBox="0 0 188 43" fill="none" xmlns="http:/www.w3org/2000/svg">
+                           <path class="star5" d="M168.271 0L172.484 14.5971H186.119L175.088 23.6187L179.301 38.2158L168.271 29.1943L157.24 38.2158L161.454 23.6187L150.423 14.5971H164.058L168.271 0Z" fill="none" stroke="#EF8275" stroke-width="2"/>
+                           <path class="star4" d="M130.738 0L134.952 14.5971H148.586L137.556 23.6187L141.769 38.2158L130.738 29.1943L119.708 38.2158L123.921 23.6187L112.891 14.5971H126.525L130.738 0Z" fill="none" stroke="#EF8275" stroke-width="2"/>
+                           <path class="star3" d="M93.5186 0L97.6616 14.5971H111.069L100.222 23.6187L104.365 38.2158L93.5186 29.1943L82.6719 38.2158L86.8149 23.6187L75.9682 14.5971H89.3755L93.5186 0Z" fill="none" stroke="#EF8275" stroke-width="2"/>
+                           <path class="star2" d="M56.2989 0L60.5122 14.5971H74.1467L63.1161 23.6187L67.3294 38.2158L56.2989 29.1943L45.2683 38.2158L49.4816 23.6187L38.4511 14.5971H52.0856L56.2989 0Z" fill="none" stroke="#EF8275" stroke-width="2"/>
+                           <path class="star1" d="M18.7663 0L22.9796 14.5971H36.6141L25.5835 23.6187L29.7968 38.2158L18.7663 29.1943L7.73574 38.2158L11.949 23.6187L0.918488 14.5971H14.553L18.7663 0Z" fill="none" stroke="#EF8275" stroke-width="2"/>
+                </svg>
+            </div>
             
         </div>
 

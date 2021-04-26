@@ -381,6 +381,11 @@ header .wave2{
     transition: all 0.25s ease;
 }
 
+#choixStage .stage.active{
+    height: 475px;
+    background-color: blue;
+}
+
 #choixStage .stage .titre{
     position: absolute;
     top: 5px;
@@ -390,6 +395,18 @@ header .wave2{
     color: black;
     transition: all 0.25S ease;
 }
+
+#choixStage .stage.active .titre{
+    top: 20px;
+    left:  185px;
+    transform: translate(0%);
+}
+
+#choixStage .stage.active .avisPositif, #choixStage .stage.active .avisNegatif, #choixStage .stage.active .entreprise, #choixStage .stage.active .like, #choixStage .stage.active .dislike, #choixStage .stage.active .icone{
+    visibility: visible;
+    opacity: 1;
+}
+
 
 #choixStage .logoEntreprise{
     background-size: cover;
@@ -455,6 +472,12 @@ header .wave2{
     transition: all 0.25s ease  ;
 }
 
+#choixStage .stage.active .descriptionMission{
+    top: 45%;
+    left: 33%;
+    width: 35%;
+}
+
 #choixStage .avisPositif{
     position: absolute;
     top: 30%;
@@ -505,6 +528,10 @@ header .wave2{
     right: 20px;
     cursor: pointer;
     transition: all 0.25s ease;
+}
+
+#choixStage .stage.active .btnDefil{
+    transform: rotateZ(180deg);
 }
 
 #choixStage .stars{
