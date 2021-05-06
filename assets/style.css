@@ -1,27 +1,29 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: "Roboto", sans-serif;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #58A4B0;
     color: white;
 }
 
-nav{
+nav {
     position: fixed;
     top: 0;
     width: 100%;
     height: 100px;
     background-color: #58a4b0d0;
     -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,7 +32,7 @@ nav{
     z-index: 10;
 }
 
-.links{
+.links {
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -38,19 +40,19 @@ nav{
     align-items: flex-start;
 }
 
-.links li{
+.links li {
     font-size: 1rem;
     list-style: none;
     margin: 2rem;
 }
 
-.links a{
+.links a {
     position: relative;
     text-decoration: none;
     color: white;
 }
 
-.links a::before{
+.links a::before {
     content: '';
     position: absolute;
     bottom: -30%;
@@ -61,13 +63,13 @@ nav{
     transition: all 0.25s ease-out;
 }
 
-.links a:hover::before{
+.links a:hover::before {
     width: 100%;
     opacity: 1;
 }
 
 
-header{
+header {
     position: relative;
     z-index: 0;
     height: 100vh;
@@ -75,7 +77,7 @@ header{
     overflow: hidden;
 }
 
-header .slogan{
+header .slogan {
     position: absolute;
     left: 50%;
     top: 30%;
@@ -85,7 +87,7 @@ header .slogan{
     z-index: 2;
 }
 
-header .discover{
+header .discover {
     position: absolute;
     left: 50%;
     top: 75%;
@@ -93,21 +95,21 @@ header .discover{
     z-index: 2;
 }
 
-header .perso1{
+header .perso1 {
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 2;
 }
 
-header .perso2{
+header .perso2 {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: 2;
 }
 
-header .wave1{
+header .wave1 {
     position: absolute;
     z-index: 1;
     bottom: 0;
@@ -115,7 +117,7 @@ header .wave1{
     transform: scale(1.5);
 }
 
-header .wave2{
+header .wave2 {
     position: absolute;
     z-index: 0;
     bottom: 20px;
@@ -123,10 +125,10 @@ header .wave2{
     transform: scale(1.5);
 }
 
-#choixDomaine{
+#choixDomaine {
     position: relative;
     width: 100%;
-    height: 75vh;
+    height: 55vh;
     background: #1B3F45;
     display: flex;
     flex-direction: column;
@@ -134,23 +136,23 @@ header .wave2{
     align-items: center;
 }
 
-#choixDomaine h2{
+#choixDomaine h2 {
     margin: 0;
     text-align: center;
     font-weight: 400;
     font-size: 2rem;
 }
 
-#choixDomaine .cards{
-    width: 100%;
+#choixDomaine .cards {
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
-#choixDomaine .card{
+#choixDomaine .card {
     position: relative;
     width: 20%;
     height: 80%;
@@ -160,12 +162,12 @@ header .wave2{
     transition: all .5s ease;
 }
 
-#choixDomaine .card:hover{
+#choixDomaine .card:hover {
     box-shadow: 8px 10px #58A4B0;
     transform: translate(-8px, -10px);
 }
 
-#choixDomaine .card h3{
+#choixDomaine .card h3 {
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -177,37 +179,37 @@ header .wave2{
     text-transform: uppercase;
     background-color: #ef8175ab;
     -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     width: 100%;
 }
 
-#choixDomaine .audiovisuel{
+#choixDomaine .audiovisuel {
     background-image: url(../images/audiovisuel.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#choixDomaine .graphisme{
+#choixDomaine .graphisme {
     background-image: url(../images/graphisme.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#choixDomaine .developpement{
+#choixDomaine .developpement {
     background-image: url(../images/developpement.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#choixDomaine .communication{
+#choixDomaine .communication {
     background-image: url(../images/communication.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#choixStage{
+#choixStage {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -218,20 +220,20 @@ header .wave2{
     align-items: flex-start;
 }
 
-#choixStage aside{
+#choixStage aside {
     height: 100%;
-    width: 25%;
+    width: 20%;
     padding: 2rem;
 }
 
-#choixStage .filtres{
+#choixStage .filtres {
     height: auto;
     width: 100%;
     background-color: #1B3F45;
     border-radius: 20px 0px;
 }
 
-#choixStage .filtres fieldset{
+#choixStage .filtres fieldset {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -239,21 +241,21 @@ header .wave2{
     border: none;
 }
 
-#choixStage .filtres fieldset legend{
+#choixStage .filtres fieldset legend {
     text-align: center;
     font-size: 1.25rem;
     padding-top: 2rem;
 }
 
-#choixStage .filtres fieldset label{
+#choixStage .filtres fieldset label {
     font-size: 1rem;
 }
 
-#choixStage .filtres fieldset input{
+#choixStage .filtres fieldset input {
     transform: scale(2);
 }
 
-#choixStage .filtre{
+#choixStage .filtre {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -263,7 +265,7 @@ header .wave2{
 }
 
 
-#choixStage .boutons{
+#choixStage .boutons {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -271,7 +273,7 @@ header .wave2{
     padding: 1rem;
 }
 
-#choixStage .boutons .btnMap{
+#choixStage .boutons .btnMap {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -279,13 +281,13 @@ header .wave2{
     margin: 2rem;
 }
 
-#choixStage .boutons .btnMap label{
+#choixStage .boutons .btnMap label {
     font-size: 1.25rem;
 }
 
-#choixStage .boutons .btnMap button{
+#choixStage .boutons .btnMap button {
     position: relative;
-    width:80%;
+    width: 80%;
     height: 30px;
     border: none;
     border-radius: 30px;
@@ -295,7 +297,7 @@ header .wave2{
     transition: all 0.5s ease;
 }
 
-#choixStage .boutons .btnMap button::before{
+#choixStage .boutons .btnMap button::before {
     position: absolute;
     content: '';
     top: 50%;
@@ -308,7 +310,7 @@ header .wave2{
     transition: all 0.5s ease;
 }
 
-#choixStage .boutons .btnMap button::after{
+#choixStage .boutons .btnMap button::after {
     position: absolute;
     content: 'MAP';
     color: white;
@@ -321,26 +323,26 @@ header .wave2{
     height: 50%;
 }
 
-#choixStage .boutons .btnMap button:hover::after{
+#choixStage .boutons .btnMap button:hover::after {
     opacity: 1;
     transition: all 1s ease;
 }
 
-#choixStage .boutons .btnMap button:hover::before{
+#choixStage .boutons .btnMap button:hover::before {
     left: 96%;
     transform: translate(-100%, -50%);
     background-color: #fff;
 }
 
-#choixStage .boutons .btnMap button:hover{
+#choixStage .boutons .btnMap button:hover {
     background-color: #EF8275;
 }
 
-#choixStage .boutons .btnMap button:focus{
+#choixStage .boutons .btnMap button:focus {
     outline: none;
 }
 
-#choixStage .boutons a{
+#choixStage .boutons a {
     text-decoration: none;
     color: white;
     font-weight: 500;
@@ -351,18 +353,18 @@ header .wave2{
     transition: all .5s ease;
 }
 
-#choixStage .boutons a:hover{
+#choixStage .boutons a:hover {
     box-shadow: none;
     transform: translate(5px, 3px);
 }
 
-#choixStage .stages{
+#choixStage .stages {
     height: auto;
     max-height: 90%;
     min-height: 50%;
     width: 65%;
     padding: 0 2rem;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -371,7 +373,7 @@ header .wave2{
     overflow-y: auto;
 }
 
-#choixStage .stage{
+#choixStage .stage {
     position: relative;
     height: 175px;
     min-height: 175px;
@@ -383,12 +385,12 @@ header .wave2{
     transition: all 0.25s ease;
 }
 
-#choixStage .stage.active{
+#choixStage .stage.active {
     height: 475px;
     min-height: 475px;
 }
 
-#choixStage .stage .titre{
+#choixStage .stage .titre {
     position: absolute;
     top: 5px;
     left: 50%;
@@ -398,19 +400,24 @@ header .wave2{
     transition: all 0.25S ease;
 }
 
-#choixStage .stage.active .titre{
+#choixStage .stage.active .titre {
     top: 20px;
-    left:  185px;
+    left: 185px;
     transform: translate(0%);
 }
 
-#choixStage .stage.active .avisPositif, #choixStage .stage.active .avisNegatif, #choixStage .stage.active .entreprise, #choixStage .stage.active .like, #choixStage .stage.active .dislike, #choixStage .stage.active .icone{
+#choixStage .stage.active .avisPositif,
+#choixStage .stage.active .avisNegatif,
+#choixStage .stage.active .entreprise,
+#choixStage .stage.active .like,
+#choixStage .stage.active .dislike,
+#choixStage .stage.active .icone {
     visibility: visible;
     opacity: 1;
 }
 
 
-#choixStage .logoEntreprise{
+#choixStage .logoEntreprise {
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -422,7 +429,7 @@ header .wave2{
     transform: translateY(-50%);
 }
 
-#choixStage .entreprise{
+#choixStage .entreprise {
     position: absolute;
     color: black;
     top: 80px;
@@ -433,7 +440,7 @@ header .wave2{
     transition: all 0.25s ease;
 }
 
-#choixStage .etudiant{
+#choixStage .etudiant {
     position: absolute;
     top: 200px;
     left: 20px;
@@ -443,17 +450,17 @@ header .wave2{
     justify-content: center;
 }
 
-#choixStage .nomEtudiant{
+#choixStage .nomEtudiant {
     color: black;
 }
 
-#choixStage .icone{
+#choixStage .icone {
     visibility: hidden;
     opacity: 0;
     transition: all 0.25s ease;
 }
 
-#choixStage .descriptionMission{
+#choixStage .descriptionMission {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -464,16 +471,16 @@ header .wave2{
     max-height: 40%;
     overflow: hidden;
     text-align: justify;
-    transition: all 0.25s ease  ;
+    transition: all 0.25s ease;
 }
 
-#choixStage .stage.active .descriptionMission{
+#choixStage .stage.active .descriptionMission {
     top: 45%;
     left: 33%;
     width: 35%;
 }
 
-#choixStage .avisPositif{
+#choixStage .avisPositif {
     position: absolute;
     top: 30%;
     right: 5%;
@@ -486,7 +493,7 @@ header .wave2{
     transition: all 0.25s ease;
 }
 
-#choixStage .avisNegatif{
+#choixStage .avisNegatif {
     position: absolute;
     bottom: 30%;
     right: 5%;
@@ -499,7 +506,7 @@ header .wave2{
     transition: all 0.25s ease;
 }
 
-#choixStage .like{
+#choixStage .like {
     position: absolute;
     top: 35%;
     right: 40%;
@@ -508,7 +515,7 @@ header .wave2{
     transition: all 0.25s ease;
 }
 
-#choixStage .dislike{
+#choixStage .dislike {
     position: absolute;
     bottom: 25%;
     right: 40%;
@@ -517,7 +524,7 @@ header .wave2{
     transition: all 0.25s ease;
 }
 
-#choixStage .btnDefil{
+#choixStage .btnDefil {
     position: absolute;
     top: 5px;
     right: 20px;
@@ -525,27 +532,27 @@ header .wave2{
     transition: all 0.25s ease;
 }
 
-#choixStage .stage.active .btnDefil{
+#choixStage .stage.active .btnDefil {
     transform: rotateZ(180deg);
 }
 
-#choixStage .stars{
+#choixStage .stars {
     position: absolute;
     bottom: 10px;
     right: 20px;
 }
 
-#choixStage .note{
+#choixStage .note {
     visibility: hidden;
     opacity: 0;
     display: none;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-footer{
+footer {
     position: relative;
     width: 100%;
     height: 100px;
@@ -557,11 +564,10 @@ footer{
     padding: 1.5rem;
 }
 
-footer p{
+footer p {
     position: absolute;
     bottom: 5px;
     right: 5px;
     font-size: .6rem;
     color: rgba(255, 255, 255, 0.5);
 }
-
