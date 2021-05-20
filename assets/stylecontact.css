@@ -72,7 +72,7 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 100px;
-    margin-bottom: 60px;
+    margin-bottom: 12vh;
 
 }
 
@@ -121,6 +121,7 @@ h1 {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+    margin-bottom: 10vh;
 }
 .mateo {
     background-color: #1B3F45;
@@ -150,9 +151,10 @@ h1 {
     background-color: aquamarine;
 }
 .description {
+    padding-top: 20px;
     padding: 30px;
     position: absolute;
-    top: 20%; 
+    top: 25%; 
 }
 
 .nom {
@@ -163,17 +165,17 @@ h1 {
 .photofel {
     background-image: url(/images/photo/felix.jpg);
     background-size: cover;
-    height: 80px;
-    width: 80px;
+    height: 110px;
+    width: 110px;
     position: absolute;
     top: 5%;
     left: 10%;
 }
 .photothv {
-    background-image: url(/imag);
+    background-image: url(/images/photo/photo_thv.jpg);
     background-size: cover;
-    height: 80px;
-    width: 80px;
+    height: 110px;
+    width: 110px;
     position: absolute;
     top: 5%;
     left: 10%;
@@ -199,6 +201,8 @@ h1 {
 .cv:hover {
     background-color: #fff;
     color: #EF8275;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
