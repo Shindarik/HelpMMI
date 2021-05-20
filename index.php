@@ -114,7 +114,7 @@
     <section id="choixDomaine">
         <h2>Choisis ton domaine</h2>
         <div class="cards">
-            <div class="card audiovisuel" data-domaine="3">
+            <div class="card audiovisuel" data-domaine="3" onclick='<?php $domaineChoix = "3"; ?>'>
                 <h3>Audiovisuel</h3>
             </div>
             <div class="card graphisme" data-domaine="4">
@@ -175,7 +175,7 @@
                             $req = $link -> prepare($sql);
                             $req -> execute();
                             $data = $req -> fetch();
-                            echo $data['poste'];
+                            echo $data['poste'].''.$domaineChoix;
                         ?>
                     </span> - MMI
                     <span class="anneeMMI">

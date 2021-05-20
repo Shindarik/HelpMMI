@@ -327,18 +327,16 @@ header .wave2 {
 #choixStage .stage .titre {
     position: absolute;
     top: 5px;
-    left: 50%;
+    left: 55%;
+    width: 60%;
     transform: translateX(-50%);
     text-align: center;
-    border: solid red;
     color: black;
     transition: all 0.25S ease;
 }
 
 #choixStage .stage.active .titre {
     top: 20px;
-    left: 185px;
-    transform: translate(0%);
 }
 
 #choixStage .stage.active .avisPositif,

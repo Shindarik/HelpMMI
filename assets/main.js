@@ -8,15 +8,3 @@ $(document).ready(function(){
 })
 
 
-
-// card.forEach(element => {
-//     element.addEventListener("click", function(){
-//         var domaineNum = this.getAttribute("data-domaine");
-
-//         filtreJS.replaceWith = '<?php $domaineChoix = '+domaineNum+'?>';
-
-//         console.log(domaineNum);
-//     });
-// });
-
-
