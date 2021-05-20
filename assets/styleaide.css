@@ -1,18 +1,19 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+body{
+    height: auto;
 }
 
 header{
-    width: 100vw;
+    width: 98.9vw;
     height: 478px;
     background-image: url(/images/pexels-picjumbocom-210661.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 100px;
-    border: red solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: red solid; */
     
 }
 
@@ -23,11 +24,10 @@ header h1{
     font-weight: bold;
     text-shadow: 3px 3px 0px #58A4B0, 6px 6px 0px #1B3F45;
     margin-left: 2rem;
-    margin-top: 8rem;
 }
 
 header div{
-    border: red solid;
+    /* border: red solid; */
     width: 901px;
     height: 136px;
     font-size: 24px;
@@ -39,40 +39,90 @@ header div{
     backdrop-filter: blur(6px);
 }
 
+main{
+    overflow: hidden;
+}
+
 .section1{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all 0.25 ease;
+}
+
+.structure.active{
+    height: auto;
+    background-color: #1B3F45;
+
+}
+
+.structure{
+    position: relative;
+    height: 20vh;
+    box-shadow: 0px 5px 15px rgba(155, 31, 0, 0.2);
+    transition: all 0.25s ease;
 }
 
 .section1 p{
     width: 88%;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 35px;
     text-align: justify;
     align-items: center;
-    border: red solid;
+    /* border: red solid; */
     margin: auto;
+    padding: 2rem;
+}
+
+.structure p{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+}
+
+.structure.active p{
+    opacity: 1;
+    visibility: visible;
 }
 
 
 .section1 h2{
     align-self: flex-start;
-    margin-left: 2rem;
+    margin: 2rem;
     font-size: 3rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     text-shadow: 8px 4px 0px #EF8275;
+    /* border: solid red; */
+    transition: all 0.25s ease;
     
 }
 
 .section1 span{
     font-size: 5rem;
+}
+
+.section1 .perso{
+    align-self: flex-end;
+}
+
+
+.btnDefil {
+    position: absolute;
+    top: 38px;
+    right: 60px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.structure.active .btnDefil {
+    transform: rotateZ(180deg);
 }
 
 
