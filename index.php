@@ -170,7 +170,7 @@
                     <span class="poste">
                         <?php
                             $sql = "SELECT poste, Id_stage
-                            FROM Stage
+                            FROM stage
                             WHERE Id_stage = '6' ";
                             $req = $link -> prepare($sql);
                             $req -> execute();
@@ -181,7 +181,7 @@
                     <span class="anneeMMI">
                         <?php
                             $sql = "SELECT anneeMMI, Id_stage 
-                            FROM Stage
+                            FROM stage
                             WHERE Id_stage = '6' ";
                             $req = $link -> prepare($sql);
                             $req -> execute();
@@ -192,7 +192,7 @@
                     <span class="annee">
                         <?php
                             $sql = "SELECT annee_stage, Id_stage 
-                            FROM Stage
+                            FROM stage
                             WHERE Id_stage = '6' ";
                             $req = $link -> prepare($sql);
                             $req -> execute();
@@ -217,7 +217,7 @@
                     <div class="icone">
                         <?php
                                 $sql = "SELECT sexe, Id_etudiant 
-                                FROM Etudiants
+                                FROM etudiants
                                 WHERE Id_etudiant = '6' ";
                                 $req = $link -> prepare($sql);
                                 $req -> execute();
@@ -240,7 +240,7 @@
                     <p class="nomEtudiant">
                         <?php
                             $sql = "SELECT prenom, nom, Id_etudiant 
-                            FROM Etudiants
+                            FROM etudiants
                             WHERE Id_etudiant = '6' ";
                             $req = $link -> prepare($sql);
                             $req -> execute();
@@ -253,7 +253,7 @@
                 <p class="descriptionMission">
                     <?php
                         $sql = "SELECT description, Id_stage 
-                        FROM Stage
+                        FROM stage
                         WHERE Id_stage = '6' ";
                         $req = $link -> prepare($sql);
                         $req -> execute();
@@ -266,7 +266,7 @@
                     Chez<a target="_blank" href="
                         <?php
                             $sql = "SELECT site_web, Id_entreprise
-                            FROM Entreprises
+                            FROM entreprises
                             WHERE Id_entreprise = '6' ";
                             $req = $link -> prepare($sql);
                             $req -> execute();
@@ -276,7 +276,7 @@
                     ">
                         <?php
                             $sql = "SELECT nom, Id_entreprise
-                            FROM Entreprises
+                            FROM entreprises
                             WHERE Id_entreprise = '6' ";
                             $req = $link -> prepare($sql);
                             $req -> execute();
@@ -292,7 +292,7 @@
                 <p class="avisPositif">
                     <?php
                         $sql = "SELECT positif, Id_stage 
-                        FROM Stage
+                        FROM stage
                         WHERE Id_stage = '6' ";
                         $req = $link -> prepare($sql);
                         $req -> execute();
@@ -306,7 +306,7 @@
                 <p class="avisNegatif">
                     <?php
                         $sql = "SELECT negatif, Id_stage 
-                        FROM Stage
+                        FROM stage
                         WHERE Id_stage = '6' ";
                         $req = $link -> prepare($sql);
                         $req -> execute();
