@@ -9,7 +9,6 @@
 
     <?php
         $link = new PDO('mysql:host=localhost;dbname=fsaal_db', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-        $domaineChoix = false;
     ?>
     
 
@@ -162,8 +161,7 @@
                 <a href="#">Tous le stages</a>
             </div>
         </aside>
-        
-        <div class="filtreJS" style="display: none;"></div>
+          
         <div class="stages">
 
             <div class="stage">
