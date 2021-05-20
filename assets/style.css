@@ -330,6 +330,7 @@ header .wave2 {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    border: solid red;
     color: black;
     transition: all 0.25S ease;
 }
