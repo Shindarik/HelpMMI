@@ -57,7 +57,7 @@ header .wave2 {
 #choixDomaine {
     position: relative;
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     background: #1B3F45;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ header .wave2 {
     position: relative;
     width: 20%;
     height: 80%;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
     transition: all .5s ease;
@@ -102,7 +102,7 @@ header .wave2 {
     text-align: center;
     margin: 0;
     padding: 1.5rem;
-    font-size: 1.25rem;
+    font-size: 1.5vw;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -216,6 +216,7 @@ header .wave2 {
 
 #choixStage .boutons .btnMap label {
     font-size: 1.25rem;
+    text-align: center;
 }
 
 #choixStage .boutons .btnMap button {
