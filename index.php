@@ -2,14 +2,14 @@
 <html lang="fr">
 
 <?php
-    include __DIR__ . '/assets/head.html';
+    include __DIR__ . './assets/head.html';
 ?>
 
 <body>
 
     <?php
         // $link = new PDO('mysql:host=localhost;dbname=fsaal_db', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-        include __DIR__ . '/assets/connect.php';
+        include __DIR__ . './assets/connect.php';
     ?>
     
 
@@ -169,9 +169,9 @@
                 <h3 class="titre">
                     <span class="poste">
                         <?php
-                            $sql = "SELECT poste, Id_domaine 
+                            $sql = "SELECT poste, Id_stage
                             FROM Stage
-                            WHERE Id_domaine = '1' ";
+                            WHERE Id_stage = '6' ";
                             $req = $link -> prepare($sql);
                             $req -> execute();
                             $data = $req -> fetch();
