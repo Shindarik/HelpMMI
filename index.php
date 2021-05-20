@@ -2,14 +2,14 @@
 <html lang="fr">
 
 <?php
-    include __DIR__ . './assets/head.html';
+    include __DIR__ . '/assets/head.html';
 ?>
 
 <body>
 
     <?php
         // $link = new PDO('mysql:host=localhost;dbname=fsaal_db', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-        include __DIR__ . './assets/connect.php';
+        include __DIR__ . '/assets/connect.php';
     ?>
     
 
