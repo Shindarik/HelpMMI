@@ -68,28 +68,31 @@ nav{
 .fond {
     height: 500px;
     width: 100vw;
+    background-image: url(/images/leon-Oalh2MojUuk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    margin-bottom: 60px;
+
 }
 
 h1 {
+    padding-top: 100px;
     font-size: 64px;
-    position: relative;
-    top: -350px;
-    left: 63px;
     z-index: 1;
+    width: 100vh;
+    margin-left: 30px;
+    text-shadow: 3px 3px 0px #58A4B0, 6px 6px 0px #1B3F45;
     
 }
 
-.bandeau {
-    background-color: #58A4B0;
-    opacity: 80%;
-    position: absolute;
-    width: 603px;
-    height: 136px;
-    left: 0px;
-    top: 300px;
-    text-align: center;
-    line-height: 136px; 
-    white-space: nowrap;
+.soustitre {
+    background-color: rgba(88, 164, 176, 0.800);
+    width: 45vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: right;
+    padding-right: 50px;  
 }
 
 .soustitre {
@@ -99,17 +102,25 @@ h1 {
 }
 .ligne { 
     
-    width: 948px;
+    width: 100vw;
     height: 539px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 10vh;
+    
 }
 .deuxiemeligne {
     
-    width: 948px;
-    height: 500px;
+    width: 100vw;
+    height: 539px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 .mateo {
     background-color: #1B3F45;
@@ -117,6 +128,7 @@ h1 {
     Height: 487px;
     filter: drop-shadow(20px 20px 0px rgba(0, 0, 0, 0.25));
     border-radius: 5%;
+  
     
 
 }
@@ -126,9 +138,7 @@ h1 {
     Height: 487px;
     filter: drop-shadow(20px 20px 0px rgba(0, 0, 0, 0.25));
     border-radius: 5%;
-    position: relative;
-    top: -487px;
-    left: 500px;
+    
 }
 
 .photo{
@@ -150,7 +160,24 @@ h1 {
     top: 5%;
     left: 40%;
 }
-
+.photofel {
+    background-image: url(/images/photo/felix.jpg);
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+.photothv {
+    background-image: url(/imag);
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
 .etoiles {
     width: 150px;
     position: absolute;
@@ -161,11 +188,20 @@ h1 {
 .cv {
     background-color: #EF8275;
     padding: 10px;
-    border-radius: 5%;
+    border-radius: 40px;
     position: absolute;
     top: 90%; left: 50%; 
     transform: translate(-50%, -50%);
+    text-decoration: none;
+    transition: ease .5s;
+    color: #fff;
 }
+.cv:hover {
+    background-color: #fff;
+    color: #EF8275;
+}
+
+
 
 .ptdeux {
     background-color: #EF8275;
@@ -173,16 +209,21 @@ h1 {
     padding: 10px;
     width: 400px;
 }
-.contact {
-    margin-left: 150px;
-}
 
-.formulaire {
-    position: absolute;
-    top: 260%; left: 50%; 
-    transform: translate(-50%, -50%);
+
+.contact {
+    font-size: 36px;
+    background-color: #EF8275;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 25vw;
+    text-align: right;
+    padding: 1rem;
     
 }
+
+
+
 
 .obl {
     margin: 10px;
@@ -191,7 +232,8 @@ h1 {
     background-color: #58A4B0;
     color: #fff;
     width: 500px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 100;
     
 } 
 .champs{
@@ -206,14 +248,23 @@ h1 {
     border: none;
     background-color: #EF8275;
     padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 10%;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
     color: #fff;
-    
-
+    transition: ease .4s;
 }
+
+.bouton:hover {
+    padding-right: 40px;
+    padding-left: 40px;
+} 
+
 
 .center {
     text-align: center;
+}
+
+textarea {
+    font-family: "Roboto", sans-serif;
 }
