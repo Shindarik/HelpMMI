@@ -114,7 +114,7 @@
     <section id="choixDomaine">
         <h2>Choisis ton domaine</h2>
         <div class="cards">
-            <div class="card audiovisuel" data-domaine="3" onclick='<?php $domaineChoix = "3"; ?>'>
+            <div class="card audiovisuel" data-domaine="3">
                 <h3>Audiovisuel</h3>
             </div>
             <div class="card graphisme" data-domaine="4">
@@ -164,6 +164,8 @@
         </aside>
           
         <div class="stages">
+
+            <?php $domaineChoix = '3'; ?>
 
             <div class="stage">
                 <h3 class="titre">
