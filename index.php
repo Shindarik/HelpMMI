@@ -165,7 +165,19 @@
           
         <div class="stages">
 
-            <?php $domaineChoix = '3'; ?>
+            <?php
+
+                $sql = "SELECT COUNT(Id_stage)
+                FROM stage";
+                $req = $link -> prepare($sql);
+                $req -> execute();
+                $data = $req -> fetch();
+
+                for ($i=1; $i <= $data['COUNT(Id_stage)']; $i++) { 
+                   
+                };   
+                 
+            ?>
 
             <div class="stage">
                 <h3 class="titre">
@@ -177,7 +189,7 @@
                             $req = $link -> prepare($sql);
                             $req -> execute();
                             $data = $req -> fetch();
-                            echo $data['poste'].''.$domaineChoix;
+                            echo $data['poste'];
                         ?>
                     </span> - MMI
                     <span class="anneeMMI">
@@ -206,9 +218,9 @@
 
                 <img src="
                     <?php
-                        $sql = "SELECT logo, Id_entreprise 
-                        FROM entreprises
-                        WHERE Id_entreprise = '6' ";
+                        $sql = "SELECT e.logo, s.Id_stage, s.Id_entreprise 
+                        FROM entreprises AS e AND stage AS s
+                        WHERE s.Id_stage = '6' AND e.Id = s.Id_entreprise";
                         $req = $link -> prepare($sql);
                         $req -> execute();
                         $data = $req -> fetch();
