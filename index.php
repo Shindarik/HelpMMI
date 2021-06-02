@@ -162,12 +162,13 @@
 
             <?php
 
-                $choixDomaine = 'Id_domaine = "3"';
-                $choixFiltre = '';
+                $choixDomaine = '3';
+                $choixFiltre = '2';
+
+                $choice = 'Id_domaine = '.$choixDomaine.' AND anneeMMI = '.$choixFiltre.'';
 
                 $sql = "SELECT COUNT(Id_stage)
-                FROM stage
-                WHERE $choixDomaine";
+                FROM stage";
                 $req = $link -> prepare($sql);
                 $req -> execute();
                 $dataTotal = $req -> fetch();
@@ -180,7 +181,7 @@
                     
                     $sql = "SELECT poste
                     FROM stage
-                    WHERE Id_stage = $i ";
+                    WHERE Id_stage = $i";
                     $req = $link -> prepare($sql);
                     $req -> execute();
                     $data = $req -> fetch();

@@ -1,0 +1,213 @@
+#choixStage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #58A4B0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#choixStage .stages {
+    height: auto;
+    max-height: 90%;
+    min-height: 50%;
+    width: 65%;
+    padding: 0 2rem;
+    margin: 20px auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: solid black;
+    overflow-y: auto;
+}
+
+#choixStage .stage {
+    position: relative;
+    height: 175px;
+    min-height: 175px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 15px 20px hsla(0, 0%, 0%, 0.2);
+    margin-top: 50px;
+    overflow: hidden;
+    transition: all 0.25s ease;
+}
+
+#choixStage .stage.active {
+    height: 475px;
+    min-height: 475px;
+}
+
+#choixStage .stage .titre {
+    position: absolute;
+    top: 5px;
+    left: 55%;
+    width: 60%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: black;
+    transition: all 0.25S ease;
+}
+
+#choixStage .stage.active .titre {
+    top: 20px;
+}
+
+#choixStage .stage.active .avisPositif,
+#choixStage .stage.active .avisNegatif,
+#choixStage .stage.active .entreprise,
+#choixStage .stage.active .like,
+#choixStage .stage.active .dislike,
+#choixStage .stage.active .icone {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#choixStage .logoEntreprise {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    border-radius: 30px;
+    top: 85px;
+    left: 25px;
+    transform: translateY(-50%);
+}
+
+#choixStage .entreprise {
+    position: absolute;
+    color: black;
+    top: 80px;
+    left: 185px;
+    font-weight: 300;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+#choixStage .etudiant {
+    position: absolute;
+    top: 200px;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#choixStage .nomEtudiant {
+    color: black;
+}
+
+#choixStage .icone {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+#choixStage .descriptionMission {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0 1rem;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: 300;
+    width: 50%;
+    max-height: 45%;
+    overflow: hidden;
+    text-align: justify;
+    transition: all 0.25s ease;
+}
+
+#choixStage .stage.active .descriptionMission {
+    top: 50%;
+    left: 35%;
+    width: 33%;
+}
+
+#choixStage .avisPositif {
+    position: absolute;
+    padding: 0 1rem;
+    top: 25%;
+    right: 5%;
+    color: black;
+    font-weight: 300;
+    width: 33%;
+    max-height: 27%;
+    overflow: auto;
+    text-align: justify;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+#choixStage .avisNegatif {
+    position: absolute;
+    padding: 0 1rem;
+    bottom: 35%;
+    right: 5%;
+    color: black;
+    font-weight: 300;
+    width: 33%;
+    transform: translateY(100%);
+    max-height: 25%;
+    overflow: auto;
+    text-align: justify;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+#choixStage .like {
+    position: absolute;
+    top: 35%;
+    right: 40%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+#choixStage .dislike {
+    position: absolute;
+    bottom: 25%;
+    right: 40%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+#choixStage .btnDefil {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#choixStage .stage.active .btnDefil {
+    transform: rotateZ(180deg);
+}
+
+#choixStage .stars {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+#choixStage .note {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
