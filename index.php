@@ -146,11 +146,6 @@
                             <label for="filtre2">MMI 2</label>
                             <input type="checkbox" name="filtre2" id="filtre2">
                         </div>
-
-                        <div class="filtre">
-                            <label for="filtre3">Filtre 3</label>
-                            <input type="checkbox" name="filtre3" id="filtre3">
-                        </div>
                     </fieldset>
                 </form>
             </div>
@@ -167,9 +162,12 @@
 
             <?php
 
+                $choixDomaine = 'Id_domaine = "3"';
+                $choixFiltre = '';
+
                 $sql = "SELECT COUNT(Id_stage)
                 FROM stage
-                WHERE Id_domaine = '1'";
+                WHERE $choixDomaine";
                 $req = $link -> prepare($sql);
                 $req -> execute();
                 $dataTotal = $req -> fetch();
@@ -212,7 +210,7 @@
 
                     echo '</span>
                         </h3>
-                        <img src="';
+                        <div style="background-image:url(';
 
                     $sql = "SELECT logo 
                     FROM entreprises AS e, stage AS s
@@ -222,7 +220,7 @@
                     $data = $req -> fetch();
                     echo $data['logo'];
 
-                    echo '"alt="logo entreprise" class="logoEntreprise">
+                    echo ');" class="logoEntreprise"></div>
                     <div class="etudiant">
                         <div class="icone">';
 
