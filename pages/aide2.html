@@ -83,16 +83,16 @@
                 </div>
                 <div class="menulm">
                     <ul>
-                        <li><a href="">Structure de la lettre</a></li>
-                        <li><a href="">La personnalité</a></li>
-                        <li><a href="">Le visuel</a></li>
-                        <li><a href="">Tips pour ton CV</a></li>
+                        <li data-page="1"> Structure de la lettre</li>
+                        <li data-page="2">La personnalité</li>
+                        <li data-page="3">Le visue</li>
+                        <li data-page="4">Tips pour ton CV</li>
                     </ul>
                 </div>
 
             </div>
             <div class="sheet">
-                <div class=".part1">
+                <div class="part1">
                     <h1> 1. La structure de votre lettre</h1>
 
                     <p> Tout d’abord il faut que vous renseignez vos coordonnées, les mêmes que celles présentes sur
@@ -129,7 +129,7 @@
                     </p>
                 </div>
 
-                <div class=".part2">
+                <div class="part2">
                     <h1> 2. La personnalité</h1>
                     <p> Dans votre lettre de motivation, il est important que vous vous démarquiez des autres. Au moment
                         de la rédiger dites-vous que celui qui la lira en a sûrement lu des dizaines et des dizaines
@@ -141,7 +141,7 @@
                         personnalité propre aux domaines MMI.</p>
                 </div>
 
-                <div class=".part3">
+                <div class="part3">
                     <h1> 3. Le visuel</h1>
                     <p> La lettre de motivation est un document formel dans lequel un visuel particulier doit être respecté.
                     Concernant sa longueur, elle ne doit pas être trop longue. 15 à 25 lignes sont préconisées, il est
@@ -163,7 +163,7 @@
                     favoriser la lisibilité.</p>
                 </div>
 
-                <div class=".part4">
+                <div class="part4">
                     <h1> 4. Tips pour ton CV</h1>
                     <p> Dans votre lettre de motivation, il est important que vous vous démarquiez des autres. Au moment
                         de la rédiger dites-vous que celui qui la lira en a sûrement lu des dizaines et des dizaines
@@ -182,5 +182,18 @@
         </div>
     </main>
 </body>
-
+<SCRIPT TYPE="text/javascript" SRC="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</SCRIPT>
+<SCRIPT TYPE="text/javascript">
+    $(document).ready(function () {
+        $(".part1, .part2, .part3, .part4").hide();
+        $(".menulm li").each(function(){
+                $(this).on('click', function(){
+                    $(".part1, .part2, .part3, .part4").hide();
+                    var numPage = $(this).attr("data-page");
+                    $(".part"+numPage).show();
+                });
+        })
+    })
+</SCRIPT>
 </html>

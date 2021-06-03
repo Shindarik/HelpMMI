@@ -133,16 +133,20 @@ ul{
     margin: 0;
 }
 
-li a{
+.menulm li {
     text-decoration: none;
     color: white;
     transition: 0.5s ease;
 }
 
-li a:hover{
+.menulm li:hover{
     color: #3B5E99 ;
     background-color: white;
-    padding: 5px 5px 10px 5px;
+    
+}
+
+ li{
+    cursor: pointer;
 }
 
 .sheet p{
