@@ -81,7 +81,7 @@
             <p class="mess">Aujourd'hui <span>15 : 33</span></p>
         </div>
         <div class="question">
-            <p>Quelles sont les étapes principales pour trouver mon stage ?</p>
+            <p>Quelles sont les étapes principales pour trouver mon stage ?</p><img src="/images/fleche.png" alt="envoi" class="envoi">
         </div>
         <div class="reponse">
             <p>Les conseils qu’on peut vous donner serait premièrement, savoir se connaître. Prendre en compte tous les
@@ -97,7 +97,7 @@
             </p>
         </div>
         <div class="question">
-            <p>Quelles sont les différences entre les stages de 1ere et 2eme année ?</p>
+            <p>Quelles sont les différences entre les stages de 1ere et 2eme année ?</p><img src="/images/fleche.png" alt="envoi" class="envoi">
         </div>
         <div class="reponse">
             <p>La différence se fait sur plusieurs axes différents. En MMI1, le stage a une durée minimum de deux
@@ -106,7 +106,7 @@
             </p>
         </div>
         <div class="question">
-            <p>Puis-je aller à l’étranger pour valider mon stage ?</p>
+            <p>Puis-je aller à l’étranger pour valider mon stage ?</p><img src="/images/fleche.png" alt="envoi" class="envoi">
         </div>
 
         <div class="reponse">
@@ -119,7 +119,7 @@
             <p><img src="../images/avion.png"> <img src="../images/smile.png"> </p>
         </div>
         <div class="question">
-            <p>Quelles tâches suis-je amené à faire durant mon stage ?</p>
+            <p>Quelles tâches suis-je amené à faire durant mon stage ?</p><img src="/images/fleche.png" alt="envoi" class="envoi">
         </div>
         <div class="reponse">
             <p>Ici, tout dépend de l’entreprise dans laquelle tu comptes envoyer ta candidature, effectivement la grosse
@@ -184,9 +184,13 @@
 <SCRIPT TYPE="text/javascript">
     $(document).ready(function () {
         $(".reponse").hide();
-        $("body").on('scroll', function(){
-            // $(".reponse").show();
-            console.log("eleeeooe");
+        $("img.envoi").each(function(){
+            $(this).on('click', function(){
+                var divQuestion = $(this).parent();
+                $(divQuestion).next().show();
+            })
+            
+            
 
         })
     })

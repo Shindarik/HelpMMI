@@ -34,9 +34,15 @@ h1 {
     width: 100vw;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     
 }
 
+.envoi {
+    width: 2.5%;
+    height: 2.5%;
+    margin-right: 15vw;
+}
 
 
 .question p {
@@ -44,7 +50,7 @@ h1 {
     padding-left: 20px;
     padding-right: 20px;
     background-color: #43CC47;
-    margin-right: 15vw;
+    margin-right: 2vw;
     border-radius: 40px;
 }
 
@@ -52,6 +58,7 @@ h1 {
     width: 100vw;
     display: flex;
     justify-content: flex-start;
+    
     
 }
 
