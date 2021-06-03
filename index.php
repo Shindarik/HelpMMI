@@ -8,7 +8,6 @@
 <body>
 
     <?php
-        // $link = new PDO('mysql:host=localhost;dbname=fsaal_db', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
         include __DIR__ . '/assets/connect.php';
     ?>
     
@@ -139,12 +138,17 @@
 
                         <div class="filtre">
                             <label for="filtre1">MMI 1</label>
-                            <input type="checkbox" name="filtre1" id="filtre1" data-filtre="1">
+                            <input type="radio" name="filtre" id="filtre1" value="1" data-filtre="1">
                         </div>
 
                         <div class="filtre">
                             <label for="filtre2">MMI 2</label>
-                            <input type="checkbox" name="filtre2" id="filtre2"  data-filtre="2">
+                            <input type="radio" name="filtre" id="filtre2" value="2"  data-filtre="2">
+                        </div>
+
+                        <div class="filtre">
+                            <label for="filtre3">MMI 1 & 2</label>
+                            <input type="radio" name="filtre" id="filtre3" value="3"  data-filtre="3" checked>
                         </div>
                     </fieldset>
                 </form>
