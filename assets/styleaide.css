@@ -3,9 +3,9 @@ body {
 }
 
 header {
-    width: 98.9vw;
+    width: 100vw;
     height: 478px;
-    background-image: url(/images/pexels-picjumbocom-210661.jpg);
+    background-image: url(../images/pexels-picjumbocom-210661.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
