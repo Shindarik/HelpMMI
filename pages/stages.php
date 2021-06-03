@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/logo/faviconHelpMMI.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo/faviconboue.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/required.css">
     <link rel="stylesheet" href="../assets/stages.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -378,10 +378,10 @@
         </div>
 
         <ul class="links">
-            <li><a href="#choixDomaine">Découvrir</a></li>
-            <li><a href="#">Aide CV</a></li>
-            <li><a href="#">F.A.Q</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="../index.php">Découvrir</a></li>
+            <li><a href="./aide.html">Aide Rédaction</a></li>
+            <li><a href="./FAQ.html">F.A.Q</a></li>
+            <li><a href="./contact.html">Contact</a></li>
          </ul>
 
          <p>©Tous droits réservés, HelpMMI 2021</p>

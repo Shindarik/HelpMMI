@@ -43,6 +43,7 @@ h1 {
     width: 2.5%;
     height: 2.5%;
     margin-right: 15vw;
+    transition: 0.3s ease;
 }
 
 
@@ -65,6 +66,17 @@ h1 {
 }
 
 .reponse p {
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e8e7ec;
+    margin-left: 15vw;
+    margin-right: 45vw;
+    border-radius: 40px;
+    color: #080808;
+    line-height: 1.5rem;
+}
+.reponse ul {
     padding: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -114,7 +126,38 @@ h1 {
     font-weight: 300;
 }
 
-p img {
+p img  {
     width: 40px;
+    
+} 
+
+
+.smiley  {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    text-align: justify;
+    
+    
 }
 
+.smiley p {
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e8e7ec;
+    margin-left: 15vw;
+    margin-right: 45vw;
+    border-radius: 40px;
+    color: #080808;
+    line-height: 1.5rem;
+}
+li {
+    margin:10px;
+    
+}
+
+.envoi:hover {
+    transform: scale(1.3);
+    
+}
