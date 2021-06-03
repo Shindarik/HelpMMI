@@ -127,6 +127,12 @@ main{
     transform: rotateZ(180deg);
 }
 
+.txt{
+    display: flex;
+    flex-direction: row;
+    
+}
+
 /* .card{
     
     visibility: hidden;
