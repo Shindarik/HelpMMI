@@ -127,38 +127,6 @@ main{
     transform: rotateZ(180deg);
 }
 
-.txt{
-    display: flex;
-    flex-direction: row;
-    
-}
 
-/* .card{
-    
-    visibility: hidden;
-} */
-
-/* .card.active{   
-    visibility: visible;
-    width: 25%;
-    height: 40%;
-    background-color: white;
-    visibility: hidden;
-    border: red solid;
-
-} */
-/* @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-  
-    30%{
-      transform: translateY(-20px);
-    }
-  
-    100%{
-      transform: translateY(0);
-    }
-  } */
 
 
