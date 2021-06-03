@@ -68,7 +68,7 @@ nav{
 .fond {
     height: 500px;
     width: 100vw;
-    background-image: url(/images/leon-Oalh2MojUuk-unsplash.jpg);
+    background-image: url(/images/photo/photogroup.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 100px;
@@ -142,13 +142,16 @@ h1 {
     
 }
 
-.photo{
-    height: 80px;
-    width: 80px;
+.photoleon{
+    background-image: url(/images/photo/photoleon.png);
+    background-size: cover;
+    background-position: center;
+    height: 110px;
+    width: 100px;
     position: absolute;
     top: 5%;
     left: 10%;
-    background-color: aquamarine;
+    
 }
 .description {
     padding-top: 20px;
@@ -162,6 +165,18 @@ h1 {
     top: 5%;
     left: 40%;
 }
+
+.photomat{
+    background-image: url(/images/photo/photomat.png);
+    background-size: cover;
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    
+}
+
 .photofel {
     background-image: url(/images/photo/felix.jpg);
     background-size: cover;
