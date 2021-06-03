@@ -113,17 +113,20 @@
     <section id="choixDomaine">
         <h2>Choisis ton domaine</h2>
         <div class="cards">
-            <div class="card audiovisuel" data-domaine="3">
+            <div class="card audiovisuel choix" data-domaine="3">
                 <h3>Audiovisuel</h3>
             </div>
-            <div class="card graphisme" data-domaine="4">
+            <div class="card graphisme choix" data-domaine="4">
                 <h3>Graphisme</h3>
             </div>
-            <div class="card developpement" data-domaine="2">
+            <div class="card developpement choix" data-domaine="2">
                 <h3>Développement</h3>
             </div>
-            <div class="card communication" data-domaine="1">
+            <div class="card communication choix" data-domaine="1">
                 <h3>Communication</h3>
+            </div>
+            <div class="card all choix" data-domaine="5">
+                <h3>Tous</h3>
             </div>
         </div>
     </section>
@@ -138,17 +141,17 @@
 
                         <div class="filtre">
                             <label for="filtre1">MMI 1</label>
-                            <input type="radio" name="filtre" id="filtre1" value="1" data-filtre="1">
+                            <input type="radio" name="filtre" id="filtre1" class="radioCheck choix" value="1">
                         </div>
 
                         <div class="filtre">
                             <label for="filtre2">MMI 2</label>
-                            <input type="radio" name="filtre" id="filtre2" value="2"  data-filtre="2">
+                            <input type="radio" name="filtre" id="filtre2" class="radioCheck choix" value="2">
                         </div>
 
                         <div class="filtre">
                             <label for="filtre3">MMI 1 & 2</label>
-                            <input type="radio" name="filtre" id="filtre3" value="3"  data-filtre="3" checked>
+                            <input type="radio" name="filtre" id="filtre3" class="radioCheck choix" value="3" checked>
                         </div>
                     </fieldset>
                 </form>
@@ -432,9 +435,9 @@
 
         <ul class="links">
             <li><a href="#choixDomaine">Découvrir</a></li>
-            <li><a href="#">Aide CV</a></li>
-            <li><a href="#">F.A.Q</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="./pages/aide.html">Aide CV</a></li>
+            <li><a href="./pages/FAQ.html">F.A.Q</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
          </ul>
 
          <p>©Tous droits réservés, HelpMMI 2021</p>
