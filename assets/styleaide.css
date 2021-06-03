@@ -38,97 +38,127 @@ header div {
     backdrop-filter: blur(6px);
 }
 
-main {
-    overflow: hidden;
+.back{
+    width: 80vw;
+    height: 150vh;
+    background-color: #f7f7f7;
+    margin: auto;
+    margin-top: 10vh ;
+    border-radius: 10px;
 }
 
-.section1 {
-    position: relative;
+.menuword{
+    width: 80vw;
+    height: 20vh;
+    background-color: #3B5E99;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px 10px 0 0;
+}
+
+.sheet{
+    height: 80%;
+    width: 78%;
+    background-color: white;
+    margin: auto;
+    margin-top: 10vh;
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.25);
+}
+
+.malm{
+    display: flex;
+    width: 100%;
+    height: 25%;
+    /* border: red solid; */
+}
+
+.wrapperbtn{
+    display: flex;
+    width: 3vw;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+    justify-content: space-between;
+}
+
+.rouge{
+    width: 10px ;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #ED6A5F;
+}
+
+.vert{
+    width: 10px ;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #62C655;
+}
+
+.jaune{
+    width: 10px ;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #F6C251;
+}
+
+.titre{
+    margin: auto;
+}
+
+
+.parametre{
+    width: 100%;
+    height: 28%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: all 0.25 ease;
+    /* border: red solid; */
 }
 
-.structure.active {
-    height: auto;
-    background-color: #1B3F45;
-
+.para{
+    width: 20vw;
+    height: 5vh;
+    background-color: #F3F4F4;
 }
 
-.structure {
-    position: relative;
-    height: 20vh;
-    box-shadow: 0px 5px 15px rgba(155, 31, 0, 0.2);
-    transition: all 0.25s ease;
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border: red solid; */
+    padding: 10px 0;
+    margin: 0;
 }
 
-
-.structure p {
-    opacity: 0;
-    visibility: hidden;
-    line-height: 1.5rem;
-    width: 70%;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 35px;
-    text-align: justify;
-    align-items: center;
-    margin: auto;
-    padding: 2rem;
+li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
 }
 
-.structure.active p {
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.5s ease;
-
+li a:hover{
+    color: #3B5E99 ;
+    background-color: white;
+    padding: 5px 5px 10px 5px;
 }
 
+.sheet p{
+    color: black;
+    padding: 15px 30px;
+}
 
-.section1 h2 {
-    align-self: flex-start;
-    margin: 2rem;
+.sheet h1{
     font-size: 2rem;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    text-shadow: 3px 4px 0px #EF8275;
-    transition: all 0.25s ease;
-
+    margin-top: 5vh;
+    color: black;
+    padding: 30px 30px 15px 30px;
 }
 
-.section1 span {
-    font-size: 3rem;
-}
-
-.section1 .perso {
-    align-self: flex-end;
-}
-
-
-.btnDefil {
-    position: absolute;
-    top: 30px;
-    right: 60px;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    width: 30px;
-    -webkit-animation: float 2s infinite;
-    animation: float 2s infinite;
-}
-
-.structure.active .btnDefil {
-    transform: rotateZ(180deg);
-<<<<<<< HEAD
-}
-
-
-
-
-=======
-}
->>>>>>> 0cf5bff062e5f39c815ed2297cd74d1f7e945fb4
+/* li a:active{
+    color: #3B5E99 ;
+    background-color: rgb(161, 51, 51);
+    padding: 5px 5px 10px 5px;
+} */
