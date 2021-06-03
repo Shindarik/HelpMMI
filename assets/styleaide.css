@@ -65,12 +65,17 @@ main{
     transition: all 0.25s ease;
 }
 
-.section1 p{
-    width: 88%;
+
+.structure p{
+    opacity: 0;
+    visibility: hidden;
+    
+    line-height: 1.5rem;
+    width: 70%;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1rem;
     line-height: 35px;
     text-align: justify;
     align-items: center;
@@ -79,15 +84,11 @@ main{
     padding: 2rem;
 }
 
-.structure p{
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.25s ease;
-}
-
 .structure.active p{
     opacity: 1;
     visibility: visible;
+    transition: all 0.5s ease;
+    
 }
 
 
@@ -127,11 +128,15 @@ main{
     transform: rotateZ(180deg);
 }
 
+<<<<<<< Updated upstream
 .txt{
     display: flex;
     flex-direction: row;
     
 }
+=======
+
+>>>>>>> Stashed changes
 
 /* .card{
     
