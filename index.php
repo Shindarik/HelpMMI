@@ -35,9 +35,9 @@
 
         <ul class="links">
            <li><a href="#choixDomaine">Découvrir</a></li>
-           <li><a href="#">Aide Rédaction</a></li>
-           <li><a href="#">F.A.Q</a></li>
-           <li><a href="#">Contact</a></li>
+           <li><a href="./pages/aide.html">Aide Rédaction</a></li>
+           <li><a href="./pages/aide.html">F.A.Q</a></li>
+           <li><a href="./pages/contact.html">Contact</a></li>
         </ul>
     </nav>
 
