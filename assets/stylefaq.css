@@ -34,9 +34,17 @@ h1 {
     width: 100vw;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    animation: ease 1s;
     
 }
 
+.envoi {
+    width: 2.5%;
+    height: 2.5%;
+    margin-right: 15vw;
+    transition: 0.3s ease;
+}
 
 
 .question p {
@@ -44,7 +52,7 @@ h1 {
     padding-left: 20px;
     padding-right: 20px;
     background-color: #43CC47;
-    margin-right: 15vw;
+    margin-right: 2vw;
     border-radius: 40px;
 }
 
@@ -52,10 +60,23 @@ h1 {
     width: 100vw;
     display: flex;
     justify-content: flex-start;
+    text-align: justify;
+    
     
 }
 
 .reponse p {
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e8e7ec;
+    margin-left: 15vw;
+    margin-right: 45vw;
+    border-radius: 40px;
+    color: #080808;
+    line-height: 1.5rem;
+}
+.reponse ul {
     padding: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -105,7 +126,38 @@ h1 {
     font-weight: 300;
 }
 
-p img {
+p img  {
     width: 40px;
+    
+} 
+
+
+.smiley  {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    text-align: justify;
+    
+    
 }
 
+.smiley p {
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e8e7ec;
+    margin-left: 15vw;
+    margin-right: 45vw;
+    border-radius: 40px;
+    color: #080808;
+    line-height: 1.5rem;
+}
+li {
+    margin:10px;
+    
+}
+
+.envoi:hover {
+    transform: scale(1.3);
+    
+}
