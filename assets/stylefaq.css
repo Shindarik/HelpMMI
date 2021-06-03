@@ -43,6 +43,7 @@ h1 {
     width: 2.5%;
     height: 2.5%;
     margin-right: 15vw;
+    transition: 0.3s ease;
 }
 
 
@@ -153,5 +154,10 @@ p img  {
 }
 li {
     margin:10px;
+    
+}
+
+.envoi:hover {
+    transform: scale(1.3);
     
 }
