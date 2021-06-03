@@ -37,6 +37,8 @@ h1 {
     
 }
 
+
+
 .question p {
     padding: 20px;
     padding-left: 20px;
@@ -101,5 +103,9 @@ h1 {
 
 .mess span {
     font-weight: 300;
+}
+
+p img {
+    width: 40px;
 }
 
