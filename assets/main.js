@@ -78,18 +78,6 @@ $(document).ready(function () {
 
                     });
 
-                    var childrenHidden = 0;
-
-                    for(var i = 0; i < $('.stages').children().length; i++){
-                        if($('.stages').children().eq(i).not(":visible")){
-                            childrenHidden++;
-                        }
-                    }
-
-                    if(childrenHidden = $('.stages').children().length){
-                        console.log("hidden");
-                    }
-
                 });
 
 
@@ -141,18 +129,6 @@ $(document).ready(function () {
 
                         });
 
-                    }
-
-                    var childrenHidden = 0;
-
-                    for(var i = 0; i < $('.stages').children().length; i++){
-                        if($('.stages').children().eq(i).not(":visible")){
-                            childrenHidden++;
-                        }
-                    }
-
-                    if(childrenHidden = $('.stages').children().length){
-                        console.log("hidden");
                     }
 
                 });
