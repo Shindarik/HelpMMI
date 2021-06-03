@@ -94,18 +94,18 @@ main{
 .section1 h2{
     align-self: flex-start;
     margin: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
-    text-shadow: 8px 4px 0px #EF8275;
+    text-shadow: 3px 4px 0px #EF8275;
     /* border: solid red; */
     transition: all 0.25s ease;
     
 }
 
 .section1 span{
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .section1 .perso{
@@ -115,14 +115,44 @@ main{
 
 .btnDefil {
     position: absolute;
-    top: 38px;
+    top: 30px;
     right: 60px;
     cursor: pointer;
     transition: all 0.25s ease;
+    width: 30px;
+    animation: float 2s infinite;
 }
 
 .structure.active .btnDefil {
     transform: rotateZ(180deg);
 }
+
+/* .card{
+    
+    visibility: hidden;
+} */
+
+/* .card.active{   
+    visibility: visible;
+    width: 25%;
+    height: 40%;
+    background-color: white;
+    visibility: hidden;
+    border: red solid;
+
+} */
+/* @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+  
+    30%{
+      transform: translateY(-20px);
+    }
+  
+    100%{
+      transform: translateY(0);
+    }
+  } */
 
 
