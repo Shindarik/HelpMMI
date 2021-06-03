@@ -1,74 +1,7 @@
-*, *::before, *::after{
-    box-sizing: border-box;
-}
-
-html{
-    font-family: "Roboto", sans-serif;
-    scroll-behavior: smooth;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #58A4B0;
-    color: white;
-}
-
-nav{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #58a4b0d0;
-    backdrop-filter: blur(3px);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    z-index: 10;
-}
-
-.links{
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.links li{
-    font-size: 1rem;
-    list-style: none;
-    margin: 2rem;
-}
-
-.links a{
-    position: relative;
-    text-decoration: none;
-    color: white;
-}
-
-.links a::before{
-    content: '';
-    position: absolute;
-    bottom: -30%;
-    width: 0%;
-    height: 2px;
-    background-color: #fff;
-    opacity: 0;
-    transition: all 0.25s ease-out;
-}
-
-.links a:hover::before{
-    width: 100%;
-    opacity: 1;
-}
-
 .fond {
     height: 500px;
     width: 100vw;
-    background-image: url(/images/photo/photogroup.png);
+    background-image: url(../images/photo/photogroup.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 100px;
@@ -83,7 +16,7 @@ h1 {
     width: 100vh;
     margin-left: 30px;
     text-shadow: 3px 3px 0px #58a4b0, 6px 6px 0px #1B3F45;
-    
+
 }
 
 .soustitre {
@@ -92,16 +25,15 @@ h1 {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: right;
-    padding-right: 50px;  
-}
-
-.soustitre {
+    padding-right: 50px;
     font-size: 36px;
     opacity: 1;
-    
 }
-.ligne { 
-    
+
+
+
+.ligne {
+
     width: 100vw;
     height: 539px;
     margin-left: auto;
@@ -110,10 +42,11 @@ h1 {
     justify-content: center;
     justify-content: space-evenly;
     margin-bottom: 10vh;
-    
+
 }
+
 .deuxiemeligne {
-    
+
     width: 100vw;
     height: 539px;
     margin-left: auto;
@@ -123,27 +56,31 @@ h1 {
     justify-content: space-evenly;
     margin-bottom: 10vh;
 }
+
 .mateo {
     background-color: #1B3F45;
     Width: 448px;
     Height: 487px;
+    -webkit-filter: drop-shadow(20px 20px 0px rgba(0, 0, 0, 0.25));
     filter: drop-shadow(20px 20px 0px rgba(0, 0, 0, 0.25));
     border-radius: 5%;
-  
-    
+
+
 
 }
-.theo{
+
+.theo {
     background-color: #1B3F45;
     Width: 448px;
     Height: 487px;
+    -webkit-filter: drop-shadow(20px 20px 0px rgba(0, 0, 0, 0.25));
     filter: drop-shadow(20px 20px 0px rgba(0, 0, 0, 0.25));
     border-radius: 5%;
-    
+
 }
 
-.photoleon{
-    background-image: url(/images/photo/photoleon.png);
+.photoleon {
+    background-image: url(../images/photo/photoleon.png);
     background-size: cover;
     background-position: center;
     height: 110px;
@@ -151,13 +88,14 @@ h1 {
     position: absolute;
     top: 5%;
     left: 10%;
-    
+
 }
+
 .description {
     padding-top: 20px;
     padding: 30px;
     position: absolute;
-    top: 25%; 
+    top: 25%;
 }
 
 .nom {
@@ -166,19 +104,19 @@ h1 {
     left: 40%;
 }
 
-.photomat{
-    background-image: url(/images/photo/photomat.png);
+.photomat {
+    background-image: url(../images/photo/photomat.png);
     background-size: cover;
     height: 110px;
     width: 110px;
     position: absolute;
     top: 5%;
     left: 10%;
-    
+
 }
 
 .photofel {
-    background-image: url(/images/photo/felix.jpg);
+    background-image: url(../images/photo/felix.jpg);
     background-size: cover;
     height: 110px;
     width: 110px;
@@ -186,8 +124,9 @@ h1 {
     top: 5%;
     left: 10%;
 }
+
 .photothv {
-    background-image: url(/images/photo/photo_thv.jpg);
+    background-image: url(../images/photo/photo_thv.jpg);
     background-size: cover;
     height: 110px;
     width: 110px;
@@ -195,10 +134,11 @@ h1 {
     top: 5%;
     left: 10%;
 }
+
 .etoiles {
     width: 150px;
     position: absolute;
-    top:20%;
+    top: 20%;
     left: 50%;
 }
 
@@ -207,12 +147,14 @@ h1 {
     padding: 10px;
     border-radius: 40px;
     position: absolute;
-    top: 90%; left: 50%; 
+    top: 90%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-decoration: none;
     transition: ease .5s;
     color: #fff;
 }
+
 .cv:hover {
     background-color: #fff;
     color: #EF8275;
@@ -238,7 +180,7 @@ h1 {
     width: 25vw;
     text-align: right;
     padding: 1rem;
-    
+
 }
 
 
@@ -253,16 +195,18 @@ h1 {
     width: 500px;
     font-size: 1.2rem;
     font-weight: 100;
-    
-} 
-.champs{
+
+}
+
+.champs {
     margin: 10px;
     border: #EF8275 solid;
-    
+
     background-color: #fff;
     color: black;
     width: 500px;
 }
+
 .bouton {
     border: none;
     background-color: #EF8275;
@@ -277,7 +221,7 @@ h1 {
 .bouton:hover {
     padding-right: 40px;
     padding-left: 40px;
-} 
+}
 
 
 .center {
