@@ -84,6 +84,7 @@ header .wave2 {
 #choixDomaine .card {
     position: relative;
     width: 20%;
+    margin: 0 20px;
     height: 80%;
     border-radius: 15px;
     overflow: hidden;
@@ -139,6 +140,13 @@ header .wave2 {
 #choixDomaine .communication {
     background-image: url(../images/communication.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#choixDomaine .all {
+    background-image: url(../images/multimedia.jpg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -222,6 +230,7 @@ header .wave2 {
 #choixStage .boutons .btnMap button {
     position: relative;
     width: 80%;
+    min-width: 70px;
     height: 30px;
     border: none;
     border-radius: 30px;
@@ -277,6 +286,7 @@ header .wave2 {
 }
 
 #choixStage .boutons a {
+    text-align: center;
     text-decoration: none;
     color: white;
     font-weight: 500;
