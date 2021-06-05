@@ -503,3 +503,47 @@ header .wave2 {
     -ms-user-select: none;
     user-select: none;
 }
+
+#mapid {
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    width: 80vw;
+    display: none;
+}
+
+.bgMap {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    z-index: 99;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+.bgMap span {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    font-weight: 900;
+    font-size: 5rem;
+    transform: rotateZ(45deg);
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.25s ease;
+}
+
+.bgMap span:hover {
+    color: #EF8275;
+    transform: rotateZ(45deg) scale(1.2);
+}
