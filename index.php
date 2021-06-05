@@ -197,8 +197,38 @@
                     $data = $req -> fetch();
                     echo $data['anneeMMI'];
                    
-                   echo '">
-                   <h3 class="titre">
+                   echo '" data-long="';
+
+                   $sql = "SELECT longitude 
+                   FROM entreprises AS e, stage AS s
+                   WHERE Id_stage = $i AND e.Id = s.Id_entreprise";
+                    $req = $link -> prepare($sql);
+                    $req -> execute();
+                    $data = $req -> fetch();
+                    echo $data['longitude'];
+
+                    echo '" data-lat="';
+
+                   $sql = "SELECT latitude 
+                   FROM entreprises AS e, stage AS s
+                   WHERE Id_stage = $i AND e.Id = s.Id_entreprise";
+                    $req = $link -> prepare($sql);
+                    $req -> execute();
+                    $data = $req -> fetch();
+                    echo $data['latitude'];
+
+                    echo '" data-entreprise="';
+
+                    $sql = "SELECT nom
+                    FROM entreprises AS e, stage AS s
+                    WHERE Id_stage = $i AND e.Id = s.Id_entreprise";
+                    $req = $link -> prepare($sql);
+                    $req -> execute();
+                    $data = $req -> fetch();
+                    echo $data['nom'];
+
+
+                   echo'"><h3 class="titre">
                        <span class="poste">';
                     
                     $sql = "SELECT poste
@@ -411,6 +441,11 @@
             ?>
             
         </div>
+
+        <div class="bgMap">
+            <span>+</span>
+        </div>
+        <div id="mapid"></div>
 
     </section>
 
