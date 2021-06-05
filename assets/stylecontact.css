@@ -5,11 +5,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 100px;
-    margin-bottom: 12vh;
 
 }
 
-h1 {
+.fond h1 {
     padding-top: 100px;
     font-size: 64px;
     z-index: 1;
@@ -19,7 +18,7 @@ h1 {
 
 }
 
-.soustitre {
+.fond h2 {
     background-color: rgba(88, 164, 176, 0.800);
     width: 45vw;
     padding-top: 30px;
@@ -32,52 +31,36 @@ h1 {
 
 
 
+.cards {
+
+    width: 100vw;
+    height: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
 .ligne {
-
-    width: 100vw;
-    height: 539px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: 40%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 10vh;
-
+    align-items: center;
 }
 
-.deuxiemeligne {
 
-    width: 100vw;
-    height: 539px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin-bottom: 10vh;
-}
-
-.mateo {
+.card {
     background-color: #1B3F45;
-    Width: 448px;
-    Height: 487px;
+    width: 25%;
+    height: 100%;
     -webkit-filter: drop-shadow(20px 20px 0px rgba(0, 0, 0, 0.25));
     filter: drop-shadow(20px 20px 0px rgba(0, 0, 0, 0.25));
     border-radius: 5%;
-
-
-
 }
 
-.theo {
-    background-color: #1B3F45;
-    Width: 448px;
-    Height: 487px;
-    -webkit-filter: drop-shadow(20px 20px 0px rgba(0, 0, 0, 0.25));
-    filter: drop-shadow(20px 20px 0px rgba(0, 0, 0, 0.25));
-    border-radius: 5%;
-
-}
 
 .photoleon {
     background-image: url(../images/photo/photoleon.png);
@@ -183,51 +166,61 @@ h1 {
 
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
 
+form * {
+    font-family: "Roboto", sans-serif;
+    margin-top: 50px;
+}
+
+form *:focus {
+    outline: none;
+}
 
 
 .obl {
-    margin: 10px;
     border: none;
     border-bottom: solid #fff;
     background-color: #58A4B0;
     color: #fff;
-    width: 500px;
+    width: 50%;
     font-size: 1.2rem;
     font-weight: 100;
-
+    transition: all 0.25s ease;
 }
 
-.champs {
-    margin: 10px;
-    border: #EF8275 solid;
-
-    background-color: #fff;
-    color: black;
-    width: 500px;
-}
-
-.bouton {
-    border: none;
-    background-color: #EF8275;
-    padding: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 10px;
-    color: #fff;
-    transition: ease .4s;
-}
-
-.bouton:hover {
-    padding-right: 40px;
-    padding-left: 40px;
-}
-
-
-.center {
-    text-align: center;
+.obl:focus {
+    border-bottom: solid #EF8275;
 }
 
 textarea {
-    font-family: "Roboto", sans-serif;
+    border: #EF8275 solid 5px;
+    background-color: #fff;
+    color: black;
+    padding: 1rem;
+    width: 50%;
+}
+
+input[type="submit"] {
+    margin-top: none;
+    border: none;
+    cursor: pointer;
+    background-color: #EF8275;
+    padding: 10px 25px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.25s ease;
+}
+
+input[type="submit"]:hover {
+    padding: 10px 40px;
+    background-color: #fff;
+    color: #EF8275;
 }

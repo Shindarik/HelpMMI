@@ -19,9 +19,11 @@ header .slogan {
 header .discover {
     position: absolute;
     left: 50%;
-    top: 75%;
+    bottom: 5%;
     transform: translateX(-50%);
     z-index: 2;
+    -webkit-animation: bounce 1.5s ease-in-out infinite;
+    animation: bounce 1.5s ease-in-out infinite;
 }
 
 header .perso1 {
@@ -57,7 +59,8 @@ header .wave2 {
 #choixDomaine {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
+    padding-top: 120px;
     background: #1B3F45;
     display: flex;
     flex-direction: column;
@@ -392,9 +395,11 @@ header .wave2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 15%;
 }
 
 #choixStage .nomEtudiant {
+    text-align: center;
     color: black;
 }
 
@@ -423,6 +428,7 @@ header .wave2 {
     top: 50%;
     left: 35%;
     width: 33%;
+    overflow: auto;
 }
 
 #choixStage .avisPositif {
@@ -504,6 +510,11 @@ header .wave2 {
     user-select: none;
 }
 
+#pasStages {
+    text-align: center;
+    margin: auto;
+}
+
 #mapid {
     position: fixed;
     z-index: 100;
@@ -546,4 +557,28 @@ header .wave2 {
 .bgMap span:hover {
     color: #EF8275;
     transform: rotateZ(45deg) scale(1.2);
+}
+
+@-webkit-keyframes bounce {
+
+    0%,
+    100% {
+        bottom: 5%;
+    }
+
+    50% {
+        bottom: 3%;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        bottom: 5%;
+    }
+
+    50% {
+        bottom: 3%;
+    }
 }
