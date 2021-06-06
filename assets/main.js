@@ -136,7 +136,7 @@ $(document).ready(function () {
             }
 
             if ((stagesHidden == stagesCount) && (messNone == true)) {
-                $(".stages").append('<h1 id="pasStages">Aucun témoignages disponible :(</h1>')
+                $(".stages").append('<h1 id="pasStages">Aucun témoignage disponible :(</h1>')
                 messNone = false;
             } else if (($("#pasStages") != undefined) && (stagesHidden != stagesCount) && (messNone == false)) {
                 $("#pasStages").remove();
