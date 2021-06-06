@@ -39,7 +39,12 @@ h1 {
 .dom {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-right: 50px;
+}
+
+.dom:last-child {
+    margin-right: 0px;
 }
 
 .dom div {
