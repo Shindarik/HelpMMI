@@ -91,7 +91,7 @@
                 </p>
                 <div class="liens">
                     <a href="https://etudiant.u-pem.fr/~msuslu01/CV/" target="_blank" class="cv">CV numerique</a>
-                    <a href="#" class="cv">CV PDF</a>
+                    <a href="../documents/CV_SUSLU_Matéo.pdf" target="_blank" class="cv">CV PDF</a>
                 </div>
             </div>
             <div class="card">
@@ -114,7 +114,7 @@
                     tant que Community Manager.</p>
                 <div class="liens">
                     <a href="https://etudiant.u-pem.fr/~tle27/CV/index.php" target="_blank" class="cv">CV numerique</a>
-                    <a href="" class="cv">CV PDF</a>
+                    <a href="../documents/Cv_Theo-Van_LE.pdf" target="_blank" class="cv">CV PDF</a>
                 </div>
             </div>
         </div>
@@ -167,7 +167,7 @@
                 </p>
                 <div class="liens">
                     <a href="https://etudiant.u-pem.fr/~fsaal/CV-num/" target="_blank" class="cv">CV numerique</a>
-                    <a href="" class="cv">CV PDF</a>
+                    <a href="../documents/CV_Felix_Saal_Juin_2021.pdf" target="_blank" class="cv">CV PDF</a>
                 </div>
             </div>
         </div>
