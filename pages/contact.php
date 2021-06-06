@@ -178,30 +178,25 @@
         <h2 class="contact">Nous contacter</h2>
     </div>
 
-    <form>
+    <form method="post">
         <input id class="obl" type="email" name="mail" id="mail" placeholder="Email" required>
         <input class="obl" type="text" name="objet" id="objet" placeholder="Objet" maxlength="30" required>
         <textarea name="message" id="message" cols="50" rows="10" placeholder="Dites nous tout !" required></textarea>
-        <input type="submit"></input>
+        <input type="submit">
     </form>
 
     <?php
 
-                include __DIR__ . '../assets/connect.php';
+        include '../assets/connect.php';
 
-                if (isset($_GET['mail']) && isset($_GET['objet']) && isset($_GET['message'])) {
+        if (isset($_POST['mail']) && isset($_POST['objet']) && isset($_POST['message'])) {
 
-                    $sql = "INSERT INTO contact(mail, objet, message) VALUES (:mail, :objet, :message)";
-                    $req = $link -> prepare($sql);
-                    $req -> execute(array(":mail" => $_GET["mail"], ":objet" => $_GET["objet"], ":message" => $_GET["message"]));
-                    $req = null;
-
-                    if($retour){
-                        echo '<script>alert("Message Envoyé !")</script>';
-                    }else{
-                        echo '<script>alert("Une erreur est survenue :(")</script>';
-                    }
-                }
+            $sql = "INSERT INTO contact(email, objet, message) VALUES (:mail, :objet, :message)";
+            $req = $link -> prepare($sql);
+            $req -> execute(array(":mail" => $_POST["mail"], ":objet" => $_POST["objet"], ":message" => $_POST["message"]));
+            $req = null;
+            echo '<script>alert("Message Envoyé !")</script>';
+        }
     ?>
 
 
