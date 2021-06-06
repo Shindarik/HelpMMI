@@ -10,7 +10,7 @@
 
 .fond h1 {
     padding-top: 100px;
-    font-size: 64px;
+    font-size: 4rem;
     z-index: 1;
     width: 100vh;
     margin-left: 30px;
@@ -20,15 +20,12 @@
 
 .fond h2 {
     background-color: rgba(88, 164, 176, 0.800);
-    width: 45vw;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: right;
-    padding-right: 50px;
-    font-size: 36px;
+    width: 30vw;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5rem;
     opacity: 1;
 }
-
 
 
 .cards {
@@ -56,83 +53,99 @@
     background-color: #1B3F45;
     width: 25%;
     height: 100%;
-    -webkit-filter: drop-shadow(20px 20px 0px rgba(0, 0, 0, 0.25));
-    filter: drop-shadow(20px 20px 0px rgba(0, 0, 0, 0.25));
+    box-shadow: 8px 8px 0px #EF8275, 16px 16px 0px rgba(255, 255, 255, 0.8);
     border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headCard {
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headText {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card p {
+    text-align: justify;
+    margin: 0 auto;
+    width: 80%;
+    height: 40%;
+    overflow: auto;
+}
+
+.liens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 15%;
 }
 
 
-.photoleon {
-    background-image: url(../images/photo/photoleon.png);
+.photo {
+    position: relative;
     background-size: cover;
     background-position: center;
-    height: 110px;
-    width: 100px;
-    position: absolute;
-    top: 5%;
-    left: 10%;
+    height: 7vw;
+    width: 7.5vw;
+    border-radius: 50%;
+    border: solid 5px #EF8275;
+}
 
+.leon {
+    background-image: url(../images/photo/photoleon.png);
+}
+
+.mat {
+    background-image: url(../images/photo/photomat.png);
+}
+
+.fel {
+    background-image: url(../images/photo/felix.jpg);
+}
+
+.thv {
+    background-image: url(../images/photo/photo_thv.jpg);
 }
 
 .description {
-    padding-top: 20px;
-    padding: 30px;
-    position: absolute;
-    top: 25%;
+    padding: 1rem;
 }
 
 .nom {
-    position: absolute;
-    top: 5%;
-    left: 40%;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 0px #58a4b0, 4px 4px 0px #325f66;
 }
 
-.photomat {
-    background-image: url(../images/photo/photomat.png);
-    background-size: cover;
-    height: 110px;
-    width: 110px;
-    position: absolute;
-    top: 5%;
-    left: 10%;
-
-}
-
-.photofel {
-    background-image: url(../images/photo/felix.jpg);
-    background-size: cover;
-    height: 110px;
-    width: 110px;
-    position: absolute;
-    top: 5%;
-    left: 10%;
-}
-
-.photothv {
-    background-image: url(../images/photo/photo_thv.jpg);
-    background-size: cover;
-    height: 110px;
-    width: 110px;
-    position: absolute;
-    top: 5%;
-    left: 10%;
+.poste {
+    text-align: center;
+    width: 80%;
+    margin: 10px 0;
 }
 
 .etoiles {
     width: 150px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
 }
 
 .cv {
     background-color: #EF8275;
     padding: 10px;
     border-radius: 40px;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-decoration: none;
     transition: ease .5s;
     color: #fff;
@@ -143,15 +156,6 @@
     color: #EF8275;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-
-
-.ptdeux {
-    background-color: #EF8275;
-    margin-top: 40px;
-    padding: 10px;
-    width: 400px;
 }
 
 
@@ -205,6 +209,7 @@ textarea {
     color: black;
     padding: 1rem;
     width: 50%;
+    resize: none;
 }
 
 input[type="submit"] {

@@ -44,7 +44,7 @@
            <li><a href="../index.php">Découvrir</a></li>
            <li><a href="./aide.html">Aide Rédaction</a></li>
            <li><a href="./FAQ.html">F.A.Q</a></li>
-           <li><a href="./contact.html">Contact</a></li>
+           <li><a href="./contact.php">Contact</a></li>
         </ul>
     </nav>
 
@@ -381,7 +381,7 @@
             <li><a href="../index.php">Découvrir</a></li>
             <li><a href="./aide.html">Aide Rédaction</a></li>
             <li><a href="./FAQ.html">F.A.Q</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./contact.php">Contact</a></li>
          </ul>
 
          <p>©Tous droits réservés, HelpMMI 2021</p>

@@ -36,7 +36,7 @@
            <li><a href="#choixDomaine">Découvrir</a></li>
            <li><a href="./pages/aide.html">Aide Rédaction</a></li>
            <li><a href="./pages/FAQ.html">F.A.Q</a></li>
-           <li><a href="./pages/contact.html">Contact</a></li>
+           <li><a href="./pages/contact.php">Contact</a></li>
         </ul>
     </nav>
 
@@ -471,7 +471,7 @@
             <li><a href="#choixDomaine">Découvrir</a></li>
             <li><a href="./pages/aide.html">Aide CV</a></li>
             <li><a href="./pages/FAQ.html">F.A.Q</a></li>
-            <li><a href="./pages/contact.html">Contact</a></li>
+            <li><a href="./pages/contact.php">Contact</a></li>
          </ul>
 
          <p>©Tous droits réservés, HelpMMI 2021</p>

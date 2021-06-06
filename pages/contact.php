@@ -72,10 +72,14 @@
     <div class="cards">
         <div class="ligne">
             <div class="card">
-                <div class="photomat"></div>
-                <h2 class="nom">Mateo Suslu</h2>
-                <span class="poste">Communicant</span>
-                <img src="../images/etoiles.png" class="etoiles">
+                <div class="headCard">
+                    <div class="photo mat"></div>
+                    <div class="headText">
+                        <h2 class="nom">Mateo Suslu</h2>
+                        <span class="poste">Chef de projet / Developpeur Full-Stack</span>
+                        <img src="../images/etoiles.png" class="etoiles">
+                    </div>
+                </div>
                 <p class="description">Dans ce projet, j’ai eu un rôle de chef de projet / développeur full-stack. J’ai
                     pu,
                     avec la collaboration de mon équipe, développer et concevoir la plateforme HelpMMI. Au travers de ce
@@ -85,13 +89,20 @@
                     projet
                     important pour nous.
                 </p>
-                <a href="" class="cv">CV numerique</a>
+                <div class="liens">
+                    <a href="#" class="cv">CV numerique</a>
+                    <a href="#" class="cv">CV PDF</a>
+                </div>
             </div>
             <div class="card">
-                <div class="photothv"></div>
-                <h2 class="nom">Théo-van Le</h2>
-                <span class="poste">Communicant</span>
-                <img src="../images/etoiles.png" class="etoiles">
+                <div class="headCard">
+                    <div class="photo thv"></div>
+                    <div class="headText">
+                        <h2 class="nom">Théo-van Le</h2>
+                        <span class="poste">Community Manager / UX Designer</span>
+                        <img src="../images/etoiles.png" class="etoiles">
+                    </div>
+                </div>
                 <p class="description">Dans ce projet, je réalise avec l'équipe de communicants, le contenu du site.Il
                     s'agit de faire des démarches envers d'anciens étudiants afin de récolter les différents
                     'témoignages'
@@ -101,16 +112,23 @@
                     les documents à rendre concernant l'avancée de ce projet tutoré et ainsi que de ce compte Instagram
                     en
                     tant que Community Manager.</p>
-                <a href="" class="cv">CV numerique</a>
+                <div class="liens">
+                    <a href="" class="cv">CV numerique</a>
+                    <a href="" class="cv">CV PDF</a>
+                </div>
             </div>
         </div>
 
         <div class="ligne">
             <div class="card">
-                <div class="photoleon"></div>
-                <h2 class="nom">Léon Rougier</h2>
-                <span class="poste">Communicant</span>
-                <img src="../images/etoiles.png" class="etoiles">
+                <div class="headCard">
+                    <div class="photo leon"></div>
+                    <div class="headText">
+                        <h2 class="nom">Léon Rougier</h2>
+                        <span class="poste">Graphiste / UX Designer</span>
+                        <img src="../images/etoiles.png" class="etoiles">
+                    </div>
+                </div>
                 <p class="description">Au sein de ce projet, j’ai un peu occupé tous les postes. J'étais au cœur de la
                     “direction artistique” du site (logo, identité visuelle, wireframing) mais j’ai aussi participé à la
                     communication, à la réalisation de la base de données et à la programmation. Ce projet m’a permis de
@@ -121,13 +139,20 @@
                     fait progresser car j’ai appris à travailler en équipe et être à l'écoute des autres membres de mon
                     groupe.
                 </p>
-                <a href="" class="cv">CV numerique</a>
+                <div class="liens">
+                    <a href="" class="cv">CV numerique</a>
+                    <a href="" class="cv">CV PDF</a>
+                </div>
             </div>
             <div class="card">
-                <div class="photofel"></div>
-                <h2 class="nom">Félix Saal</h2>
-                <span class="poste">Communicant</span>
-                <img src="../images/etoiles.png" class="etoiles">
+                <div class="headCard">
+                    <div class="photo fel"></div>
+                    <div class="headText">
+                        <h2 class="nom">Félix Saal</h2>
+                        <span class="poste">Developpeur Front-End</span>
+                        <img src="../images/etoiles.png" class="etoiles">
+                    </div>
+                </div>
                 <p class="description">Dans ce projet, j’ai un peu touché à tous les rôles. De la recherche d’idées, à
                     la
                     conception (graphisme, développement), jusqu’à la communication, j’ai pu effectuer plusieurs tâches
@@ -140,7 +165,10 @@
                     J’apprécie beaucoup travailler avec l’équipe de HelpMMi qui sont eux-mêmes très professionnels et à
                     l’écoute.
                 </p>
-                <a href="" class="cv">CV numerique</a>
+                <div class="liens">
+                    <a href="" class="cv">CV numerique</a>
+                    <a href="" class="cv">CV PDF</a>
+                </div>
             </div>
         </div>
     </div>
@@ -151,11 +179,30 @@
     </div>
 
     <form>
-        <input class="obl" type="email" placeholder="Email" required>
-        <input class="obl" type="text" placeholder="Objet" maxlength="30" required>
-        <textarea name="text" cols="50" rows="10" placeholder="Dites nous tout !" required></textarea>
+        <input id class="obl" type="email" name="mail" id="mail" placeholder="Email" required>
+        <input class="obl" type="text" name="objet" id="objet" placeholder="Objet" maxlength="30" required>
+        <textarea name="message" id="message" cols="50" rows="10" placeholder="Dites nous tout !" required></textarea>
         <input type="submit"></input>
     </form>
+
+    <?php
+
+                include __DIR__ . '../assets/connect.php';
+
+                if (isset($_GET['mail']) && isset($_GET['objet']) && isset($_GET['message'])) {
+
+                    $sql = "INSERT INTO contact(mail, objet, message) VALUES (:mail, :objet, :message)";
+                    $req = $link -> prepare($sql);
+                    $req -> execute(array(":mail" => $_GET["mail"], ":objet" => $_GET["objet"], ":message" => $_GET["message"]));
+                    $req = null;
+
+                    if($retour){
+                        echo '<script>alert("Message Envoyé !")</script>';
+                    }else{
+                        echo '<script>alert("Une erreur est survenue :(")</script>';
+                    }
+                }
+    ?>
 
 
     <footer>
