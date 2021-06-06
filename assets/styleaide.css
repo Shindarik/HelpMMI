@@ -29,7 +29,7 @@ header div {
     background-color: rgba(88, 164, 176, 0.800);
     width: 55vw;
     padding: 30px;
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
