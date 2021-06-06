@@ -26,6 +26,8 @@ h1 {
     text-align: left;
     padding-left: 50px;
     font-size: 1.5rem;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
 }
 
 .question {

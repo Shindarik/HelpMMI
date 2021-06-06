@@ -27,12 +27,12 @@ header h1 {
 
 header div {
     background-color: rgba(88, 164, 176, 0.800);
-    width: 30vw;
+    width: 55vw;
     padding: 30px;
     text-align: center;
     font-size: 1.5rem;
     -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
 }
 
 .back {
