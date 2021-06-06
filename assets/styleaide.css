@@ -38,18 +38,17 @@ header div {
     backdrop-filter: blur(6px);
 }
 
-.back{
+.back {
     width: 80vw;
     height: 150vh;
     background-color: #f7f7f7;
-    margin: auto;
-    margin-top: 10vh ;
+    margin: 10vh auto;
     border-radius: 10px;
 }
 
-.menuword{
+.menuword {
     width: 80vw;
-    height: 20vh;
+    height: 10%;
     background-color: #3B5E99;
     margin: auto;
     display: flex;
@@ -58,72 +57,105 @@ header div {
     border-radius: 10px 10px 0 0;
 }
 
-.sheet{
+.sheet {
     height: 80%;
-    width: 78%;
+    width: 80%;
     background-color: white;
-    margin: auto;
-    margin-top: 10vh;
+    margin: 5% auto;
     box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.25);
 }
 
-.malm{
+.malm {
     display: flex;
+    font-display: row;
     width: 100%;
     height: 25%;
-    /* border: red solid; */
+    justify-content: center;
+    align-items: center;
 }
 
-.wrapperbtn{
+.wrapperbtn {
     display: flex;
     width: 3vw;
     flex-direction: row;
     align-items: center;
     margin-left: 15px;
+    margin-right: auto;
     justify-content: space-between;
 }
 
-.rouge{
-    width: 10px ;
+.wrapperbtn div {
+    width: 10px;
     height: 10px;
-    border-radius: 10px;
+    border-radius: 50%;
+}
+
+.rouge {
     background-color: #ED6A5F;
 }
 
-.vert{
-    width: 10px ;
-    height: 10px;
-    border-radius: 10px;
+.vert {
     background-color: #62C655;
 }
 
-.jaune{
-    width: 10px ;
-    height: 10px;
-    border-radius: 10px;
+.jaune {
     background-color: #F6C251;
 }
 
-.titre{
-    margin: auto;
+.titre {
+    margin-right: auto;
+}
+
+.malm img {
+    width: 25px;
+    margin-right: 15px;
+    margin-top: 5px;
 }
 
 
-.parametre{
+.parametre {
     width: 100%;
-    height: 28%;
+    height: 30%;
     display: flex;
     justify-content: center;
-    /* border: red solid; */
+    align-items: center;
 }
 
-.para{
-    width: 20vw;
-    height: 5vh;
+.para {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    border-radius: 30px;
+    color: black;
+    font-weight: 500;
+    font-size: 2rem;
     background-color: #F3F4F4;
 }
 
-ul{
+.para * {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.souligner {
+    text-decoration: underline;
+}
+
+.gras {
+    font-weight: 900;
+}
+
+.para input {
+    width: 20%;
+}
+
+ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -139,26 +171,34 @@ ul{
     transition: 0.5s ease;
 }
 
-.menulm li:hover{
-    color: #3B5E99 ;
+.menulm li:hover {
+    color: #3B5E99;
     background-color: white;
-    
+    padding: 0 10px;
+    border-radius: 30px;
+
 }
 
- li{
+li {
     cursor: pointer;
 }
 
-.sheet p{
+.sheet p {
     color: black;
     padding: 15px 30px;
 }
 
-.sheet h1{
+.sheet h1 {
     font-size: 2rem;
     margin-top: 5vh;
     color: black;
     padding: 30px 30px 15px 30px;
+}
+
+.sheet span {
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
 }
 
 /* li a:active{

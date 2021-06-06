@@ -43,9 +43,8 @@
     <header>
         <h1 class="slogan">Découvrez l'expérience des stages MMI</h1>
         <a href="#choixDomaine" class="discover">
-            <svg width="5vw" height="5vw" viewBox="0 0 97 102" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse rx="48.3571" ry="49.101" transform="matrix(-1 0 0 1 48.5455 52.0769)" fill="#EF8275"/>
-                <path d="M27.0095 37.0862C26.7283 36.9368 26.5221 36.9334 26.3694 36.9627C26.1907 36.9971 25.9912 37.0985 25.821 37.2748C25.6507 37.4512 25.5565 37.6542 25.5284 37.834C25.5045 37.9876 25.5152 38.1936 25.6744 38.4693L47.4553 76.1949C47.8402 76.8616 48.8025 76.8616 49.1874 76.1949L70.9682 38.4694C71.1274 38.1936 71.1382 37.9876 71.1142 37.834C71.0862 37.6542 70.9919 37.4512 70.8217 37.2748C70.6515 37.0985 70.452 36.9971 70.2732 36.9627C70.1206 36.9334 69.9143 36.9368 69.6331 37.0862L51.605 46.6621C49.5517 47.7527 47.0909 47.7527 45.0377 46.6621L27.0095 37.0862Z" stroke="white" stroke-width="6"/>
+            <svg width="100px" height="100px" viewBox="0 0 97 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.0095 37.0862C26.7283 36.9368 26.5221 36.9334 26.3694 36.9627C26.1907 36.9971 25.9912 37.0985 25.821 37.2748C25.6507 37.4512 25.5565 37.6542 25.5284 37.834C25.5045 37.9876 25.5152 38.1936 25.6744 38.4693L47.4553 76.1949C47.8402 76.8616 48.8025 76.8616 49.1874 76.1949L70.9682 38.4694C71.1274 38.1936 71.1382 37.9876 71.1142 37.834C71.0862 37.6542 70.9919 37.4512 70.8217 37.2748C70.6515 37.0985 70.452 36.9971 70.2732 36.9627C70.1206 36.9334 69.9143 36.9368 69.6331 37.0862L51.605 46.6621C49.5517 47.7527 47.0909 47.7527 45.0377 46.6621L27.0095 37.0862Z" stroke="#EF8275" stroke-width="7"/>
             </svg>
         </a>
         <div class="perso1">
@@ -197,8 +196,38 @@
                     $data = $req -> fetch();
                     echo $data['anneeMMI'];
                    
-                   echo '">
-                   <h3 class="titre">
+                   echo '" data-long="';
+
+                   $sql = "SELECT longitude 
+                   FROM entreprises AS e, stage AS s
+                   WHERE Id_stage = $i AND e.Id = s.Id_entreprise";
+                    $req = $link -> prepare($sql);
+                    $req -> execute();
+                    $data = $req -> fetch();
+                    echo $data['longitude'];
+
+                    echo '" data-lat="';
+
+                   $sql = "SELECT latitude 
+                   FROM entreprises AS e, stage AS s
+                   WHERE Id_stage = $i AND e.Id = s.Id_entreprise";
+                    $req = $link -> prepare($sql);
+                    $req -> execute();
+                    $data = $req -> fetch();
+                    echo $data['latitude'];
+
+                    echo '" data-entreprise="';
+
+                    $sql = "SELECT nom
+                    FROM entreprises AS e, stage AS s
+                    WHERE Id_stage = $i AND e.Id = s.Id_entreprise";
+                    $req = $link -> prepare($sql);
+                    $req -> execute();
+                    $data = $req -> fetch();
+                    echo $data['nom'];
+
+
+                   echo'"><h3 class="titre">
                        <span class="poste">';
                     
                     $sql = "SELECT poste
@@ -411,6 +440,11 @@
             ?>
             
         </div>
+
+        <div class="bgMap">
+            <span>+</span>
+        </div>
+        <div id="mapid"></div>
 
     </section>
 
