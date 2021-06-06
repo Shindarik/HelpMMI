@@ -11,6 +11,7 @@
         include __DIR__ . '/assets/connect.php';
     ?>
 
+    <!-- barre de navigation présente sur les différentes pages du site -->
     <nav>
         <div class="logoIndex">
             <a href="./index.php"> 
@@ -39,6 +40,7 @@
         </ul>
     </nav>
 
+    <!-- Header du site contenant des illustrations et la phrase d'accroche de la plateforme -->
     <header>
         <h1 class="slogan">Découvrez l'expérience des stages MMI</h1>
         <a href="#choixDomaine" class="discover">
@@ -108,6 +110,7 @@
             
     </header>
 
+    <!-- Filtres qui permettent de choisir le domaine pour les témoignages -->
     <section id="choixDomaine">
         <h2>Choisis ton domaine</h2>
         <div class="cards">
@@ -130,8 +133,8 @@
     </section>
 
     <section id="choixStage">
-
         <aside>
+            <!-- Filtres qui permettent de choisir l'année de MMI pour les témoignages -->
             <div class="filtres">
                 <form action="">
                     <fieldset>
@@ -155,14 +158,17 @@
                 </form>
             </div>
             <div class="boutons">
+                <!-- Bouton qui affiche un map avec comme marqueur géographique les témoignages précédemment filtrés -->
                 <div class="btnMap">
                     <label for="">Voir la carte</label>
                     <button id="map"></button>
                 </div>
+                <!-- Bouton qui ouvre une page avec tous les stages, chacun classé avec un code couleur par domaine -->
                 <a href="./pages/stages.php">Tous le stages</a>
             </div>
         </aside>
           
+        <!-- liste de toutes les stages en fonction des filtres -->
         <div class="stages">
 
             <?php
@@ -443,6 +449,7 @@
         <div class="bgMap">
             <span>+</span>
         </div>
+        <!-- carte avec les marqueurs -->
         <div id="mapid"></div>
 
     </section>
