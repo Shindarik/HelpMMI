@@ -90,7 +90,7 @@
                     important pour nous.
                 </p>
                 <div class="liens">
-                    <a href="#" class="cv">CV numerique</a>
+                    <a href="https://etudiant.u-pem.fr/~msuslu01/CV/" target="_blank" class="cv">CV numerique</a>
                     <a href="#" class="cv">CV PDF</a>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                     en
                     tant que Community Manager.</p>
                 <div class="liens">
-                    <a href="" class="cv">CV numerique</a>
+                    <a href="https://etudiant.u-pem.fr/~tle27/CV/index.php" target="_blank" class="cv">CV numerique</a>
                     <a href="" class="cv">CV PDF</a>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                     groupe.
                 </p>
                 <div class="liens">
-                    <a href="" class="cv">CV numerique</a>
+                    <a href="https://etudiant.u-pem.fr/~lrougier/cv/" target="_blank" class="cv">CV numerique</a>
                     <a href="" class="cv">CV PDF</a>
                 </div>
             </div>
@@ -166,7 +166,7 @@
                     l’écoute.
                 </p>
                 <div class="liens">
-                    <a href="" class="cv">CV numerique</a>
+                    <a href="https://etudiant.u-pem.fr/~fsaal/CV-num/" target="_blank" class="cv">CV numerique</a>
                     <a href="" class="cv">CV PDF</a>
                 </div>
             </div>

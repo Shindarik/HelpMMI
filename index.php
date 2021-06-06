@@ -10,7 +10,6 @@
     <?php
         include __DIR__ . '/assets/connect.php';
     ?>
-    
 
     <nav>
         <div class="logoIndex">
