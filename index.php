@@ -164,7 +164,7 @@
                     <button id="map"></button>
                 </div>
                 <!-- Bouton qui ouvre une page avec tous les stages, chacun classé avec un code couleur par domaine -->
-                <a href="./pages/stages.php">Tous le stages</a>
+                <a href="./pages/stages.php">Tous les stages</a>
             </div>
         </aside>
           
